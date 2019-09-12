@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="UTF-8"?><model fileName="C:\Users\User\Desktop\P1_Simu\As-Is.spm" modelId="16d01379e24" name="As-Is" serialId="45">
+  <version build="19620" major="6" minor="4" release="6.4.1"/>
+  <properties>
+    <author label="_555" value=""/>
+    <manager label="_590" value=""/>
+    <company label="_591" value=""/>
+    <modelVersion label="_1354" value=""/>
+    <imported label="_1351" value=""/>
+    <created label="_592" value="1567683485220"/>
+    <saved label="_593" value="1568280111159"/>
+    <editLog label="_595">
+      <edit user="UPNA" value="1567683485220"/>
+      <edit user="User" value="1568280044891"/>
+      <edit user="User" value="1568280111159"/>
+    </editLog>
+  </properties>
+  <processNumbering value="false"/>
+  <preferences DefaultColor="-1" LayoutTools="true" ShowEView="false" SystemTools="true" WindowHeight="1017" WindowWidth="1920" WindowX="0" WindowY="0" layoutGridLines="false" layoutSnapToGrid="true"/>
+  <process atomic="false" displayMethod="icon" displayOrder="front" id="0" locked="false" name="TopProcess0" type="TopProcess" visible="true">
+    <location x="0" y="0"/>
+    <size height="32" width="32"/>
+    <alternatives>
+      <alternative active="true" name="Alt1">
+        <color blue="255" green="255" red="255"/>
+        <connection id="13" name="Conn13" nameLabel="_160" style="BentConnector" type="StandardConnection" visible="true">
+          <showName display="true" label="_219" spacer=" " value="false"/>
+          <nameLocation>
+            <location x="" y=""/>
+          </nameLocation>
+          <display display="true" label="_12">
+            <lineWidth display="true" label="_150" value="100"/>
+            <lineStyle display="true" label="_149" value="Solid"/>
+          </display>
+          <document template="Connector" value=""/>
+          <comment label="_81" value=""/>
+          <pad idref="3"/>
+          <pad idref="5"/>
+        </connection>
+        <connection id="14" name="Conn14" nameLabel="_160" style="BentConnector" type="StandardConnection" visible="true">
+          <showName display="true" label="_219" spacer=" " value="false"/>
+          <nameLocation>
+            <location x="" y=""/>
+          </nameLocation>
+          <display display="true" label="_12">
+            <lineWidth display="true" label="_150" value="100"/>
+            <lineStyle display="true" label="_149" value="Solid"/>
+          </display>
+          <document template="Connector" value=""/>
+          <comment label="_81" value=""/>
+          <pad idref="6"/>
+          <pad idref="8"/>
+        </connection>
+        <process atomic="false" displayMethod="icon" displayOrder="front" id="1" locked="false" name="Generate Calls" nameLabel="_160" parentIdRef="0" showName="true" showNameLabel="_219" type="Process" useTextBlock="false" useTextBlockLabel="_646" visible="true">
+          <nameLocation>
+            <location x="" y=""/>
+          </nameLocation>
+          <location height="52" width="68" x="182" y="195"/>
+          <localProcessAttributes serialId="0"/>
+          <pad id="3" name="out1" nameLabel="_160" type="OutputPad">
+            <placement border="east" offset="19"/>
+            <nameLocation label="_103" spacer=" " value="false">
+              <location x="9" y="2"/>
+            </nameLocation>
+            <comment label="_81" value=""/>
+          </pad>
+          <comment label="_81" value="This proccess generates two types of calls."/>
+          <textBlock>
+            <font bold="false" boldLabel="_65" color="Black" colorLabel="_79" display="true" family="Serif" familyLabel="_127" italic="false" italicLabel="_142" label="_19" size="10" sizeLabel="_224"/>
+            <showText display="true" label="_221" value="true"/>
+            <checkBox display="true" label="_647" type="addLabel" value="true">
+              <textLabel display="true" label="_648">
+                <props>
+                  <nameOrientation display="true" label="_649" orientation="x">
+                    <horizontal display="true" label="_533" value="true"/>
+                    <vertical display="true" label="_535" value="false"/>
+                  </nameOrientation>
+                  <checkBox display="true" label="_1355" type="includeAlt" value="false"/>
+                  <font bold="true" boldLabel="_65" color="Black" colorLabel="_79" display="true" family="Serif" familyLabel="_127" italic="false" italicLabel="_142" label="_19" size="12" sizeLabel="_224"/>
+                </props>
+              </textLabel>
+            </checkBox>
+            <textLine value="Generate"/>
+            <textLine value=""/>
+            <textLine value="Calls"/>
+          </textBlock>
+          <publishLink/>
+          <eventLogs/>
+          <counts>
+            <checkBox display="true" label="_729" type="totalCount" value="true">
+              <colorSelection label="_732" value="Red"/>
+              <checkBox label="_730" type="showBar" value="false">
+                <maxHeight display="true" label="_731" minValue="1" value="100"/>
+              </checkBox>
+            </checkBox>
+          </counts>
+          <document template="Process" value=""/>
+          <realTimePlots template="Process"/>
+          <color blue="255" green="255" red="255"/>
+          <icon display="true">DefaultIcon</icon>
+          <alternatives display="true" label="_5">
+            <alternative active="true" commentLabel="_81" name="Alt1" nameLabel="_160">
+              <connection id="23" name="Conn23" nameLabel="_160" style="BentConnector" type="GenerateConnection" visible="true">
+                <showName display="true" label="_219" spacer=" " value="false"/>
+                <nameLocation>
+                  <location x="" y=""/>
+                </nameLocation>
+                <autoLabel display="true" label="_60" spacer=" " value="false"/>
+                <type display="true" label="_896">
+                  <typeOption display="true" label="_894" value="true"/>
+                  <typeOption display="true" label="_895" orientation="y" value="false">
+                    <entity display="true" label="_3" value=""/>
+                    <quantity display="true" distribution="1.0" label="_4"/>
+                  </typeOption>
+                </type>
+                <display display="true" label="_12">
+                  <lineWidth display="true" label="_150" value="100"/>
+                  <lineStyle display="true" label="_149" value="Solid"/>
+                </display>
+                <document template="Connector" value=""/>
+                <comment label="_81" value=""/>
+                <pad idref="16"/>
+                <pad idref="3"/>
+              </connection>
+              <connection id="24" name="Conn24" nameLabel="_160" style="BentConnector" type="GenerateConnection" visible="true">
+                <showName display="true" label="_219" spacer=" " value="false"/>
+                <nameLocation>
+                  <location x="" y=""/>
+                </nameLocation>
+                <autoLabel display="true" label="_60" spacer=" " value="false"/>
+                <type display="true" label="_896">
+                  <typeOption display="true" label="_894" value="true"/>
+                  <typeOption display="true" label="_895" orientation="y" value="false">
+                    <entity display="true" label="_3" value=""/>
+                    <quantity display="true" distribution="1.0" label="_4"/>
+                  </typeOption>
+                </type>
+                <display display="true" label="_12">
+                  <lineWidth display="true" label="_150" value="100"/>
+                  <lineStyle display="true" label="_149" value="Solid"/>
+                </display>
+                <document template="Connector" value=""/>
+                <comment label="_81" value=""/>
+                <pad idref="20"/>
+                <pad idref="3"/>
+              </connection>
+              <process atomic="true" displayMethod="icon" displayOrder="front" id="15" locked="false" name="Generate Service Calls" nameLabel="_160" parentIdRef="1" showName="true" showNameLabel="_219" type="Generate" useTextBlock="false" useTextBlockLabel="_646" visible="true">
+                <nameLocation>
+                  <location x="" y=""/>
+                </nameLocation>
+                <location height="32" width="32" x="255" y="138"/>
+                <localProcessAttributes serialId="0"/>
+                <comment display="true" value=""/>
+                <startEnd template="Standard"/>
+                <pad id="16" name="out1" nameLabel="_160" type="OutputPad">
+                  <placement border="east" offset="16"/>
+                  <nameLocation label="_103" spacer=" " value="false">
+                    <location x="9" y="2"/>
+                  </nameLocation>
+                  <comment label="_81" value=""/>
+                </pad>
+                <textBlock/>
+                <publishLink/>
+                <eventLogs/>
+                <counts>
+                  <checkBox display="true" label="_729" type="totalCount" value="true">
+                    <colorSelection label="_732" value="Red"/>
+                    <checkBox label="_730" type="showBar" value="false">
+                      <maxHeight display="true" label="_731" minValue="1" value="100"/>
+                    </checkBox>
+                  </checkBox>
+                </counts>
+                <document template="Generate" value=""/>
+                <realTimePlots template="Activity"/>
+                <icon display="true">Generate</icon>
+                <entity allowEdit="true" display="true" idref="18" label="_123"/>
+                <quantity display="true" distribution="1.0" label="_192"/>
+                <familyName display="true" editable="true" label="_125" value="Undefined"/>
+                <schedules display="true" label="_211">
+                  <schedule display="true" id="17" localId="1" name="Periodic1" nameLabel="_211" type="Periodic" value="">
+                    <spacer count="1" display="true"/>
+                    <entity allowEdit="true" canDefault="true" display="true" idref="use default" label="_123"/>
+                    <quantity canDefault="true" display="true" distribution="use default" label="_192"/>
+                    <interval display="true">
+                      <intervalValue display="true" distribution="Exp(6.0,1)" label="_141"/>
+                      <timeUnit display="true" label="_242" value="Minutes"/>
+                    </interval>
+                    <spacer count="0.5" display="true"/>
+                    <genAtStart display="true" label="_130" value="true"/>
+                    <spacer count="0.5" display="true" spacer="             "/>
+                    <comment display="true" label="_80" value=""/>
+                    <startEnd template="Schedule"/>
+                  </schedule>
+                </schedules>
+                <collectactstats display="true" label="_72" value="false"/>
+                <collectactentstats display="true" label="_73" value="false"/>
+              </process>
+              <process atomic="true" displayMethod="icon" displayOrder="front" id="19" locked="false" name="Generate Sales Calls" nameLabel="_160" parentIdRef="1" showName="true" showNameLabel="_219" type="Generate" useTextBlock="false" useTextBlockLabel="_646" visible="true">
+                <nameLocation>
+                  <location x="" y=""/>
+                </nameLocation>
+                <location height="32" width="32" x="255" y="349"/>
+                <localProcessAttributes serialId="0"/>
+                <comment display="true" value=""/>
+                <startEnd template="Standard"/>
+                <pad id="20" name="out1" nameLabel="_160" type="OutputPad">
+                  <placement border="east" offset="12"/>
+                  <nameLocation label="_103" spacer=" " value="false">
+                    <location x="9" y="2"/>
+                  </nameLocation>
+                  <comment label="_81" value=""/>
+                </pad>
+                <textBlock/>
+                <publishLink/>
+                <eventLogs/>
+                <counts>
+                  <checkBox display="true" label="_729" type="totalCount" value="true">
+                    <colorSelection label="_732" value="Red"/>
+                    <checkBox label="_730" type="showBar" value="false">
+                      <maxHeight display="true" label="_731" minValue="1" value="100"/>
+                    </checkBox>
+                  </checkBox>
+                </counts>
+                <document template="Generate" value=""/>
+                <realTimePlots template="Activity"/>
+                <icon display="true">Generate</icon>
+                <entity allowEdit="true" display="true" idref="22" label="_123"/>
+                <quantity display="true" distribution="1.0" label="_192"/>
+                <familyName display="true" editable="true" label="_125" value="Undefined"/>
+                <schedules display="true" label="_211">
+                  <schedule display="true" id="21" localId="1" name="Periodic1" nameLabel="_211" type="Periodic" value="">
+                    <spacer count="1" display="true"/>
+                    <entity allowEdit="true" canDefault="true" display="true" idref="22" label="_123"/>
+                    <quantity canDefault="true" display="true" distribution="use default" label="_192"/>
+                    <interval display="true">
+                      <intervalValue display="true" distribution="Exp(3.0,1)" label="_141"/>
+                      <timeUnit display="true" label="_242" value="Minutes"/>
+                    </interval>
+                    <spacer count="0.5" display="true"/>
+                    <genAtStart display="true" label="_130" value="true"/>
+                    <spacer count="0.5" display="true" spacer="             "/>
+                    <comment display="true" label="_80" value=""/>
+                    <startEnd template="Schedule"/>
+                  </schedule>
+                </schedules>
+                <collectactstats display="true" label="_72" value="false"/>
+                <collectactentstats display="true" label="_73" value="false"/>
+              </process>
+            </alternative>
+          </alternatives>
+          <checkBox display="true" label="_721" type="master" value="false"/>
+          <collectactstats display="true" label="_72" value="false"/>
+          <collectactentstats display="true" label="_73" value="false"/>
+        </process>
+        <process atomic="false" displayMethod="icon" displayOrder="front" id="4" locked="false" name="Procces Calls" nameLabel="_160" parentIdRef="0" showName="true" showNameLabel="_219" type="Process" useTextBlock="false" useTextBlockLabel="_646" visible="true">
+          <nameLocation>
+            <location x="" y=""/>
+          </nameLocation>
+          <location height="52" width="68" x="383" y="193"/>
+          <localProcessAttributes serialId="0"/>
+          <pad id="5" name="in1" nameLabel="_160" type="InputPad">
+            <placement border="west" offset="21"/>
+            <nameLocation label="_103" spacer=" " value="false">
+              <location x="-9" y="2"/>
+            </nameLocation>
+            <comment label="_81" value=""/>
+          </pad>
+          <pad id="6" name="out1" nameLabel="_160" type="OutputPad">
+            <placement border="east" offset="21"/>
+            <nameLocation label="_103" spacer=" " value="false">
+              <location x="9" y="2"/>
+            </nameLocation>
+            <comment label="_81" value=""/>
+          </pad>
+          <comment label="_81" value="As-is procces with 3 service and 4 sales reps."/>
+          <textBlock>
+            <font bold="false" boldLabel="_65" color="Black" colorLabel="_79" display="true" family="Serif" familyLabel="_127" italic="false" italicLabel="_142" label="_19" size="10" sizeLabel="_224"/>
+            <showText display="true" label="_221" value="true"/>
+            <checkBox display="true" label="_647" type="addLabel" value="true">
+              <textLabel display="true" label="_648">
+                <props>
+                  <nameOrientation display="true" label="_649" orientation="x">
+                    <horizontal display="true" label="_533" value="true"/>
+                    <vertical display="true" label="_535" value="false"/>
+                  </nameOrientation>
+                  <checkBox display="true" label="_1355" type="includeAlt" value="false"/>
+                  <font bold="true" boldLabel="_65" color="Black" colorLabel="_79" display="true" family="Serif" familyLabel="_127" italic="false" italicLabel="_142" label="_19" size="12" sizeLabel="_224"/>
+                </props>
+              </textLabel>
+            </checkBox>
+            <textLine value="Procces"/>
+            <textLine value=""/>
+            <textLine value="Calls"/>
+          </textBlock>
+          <publishLink/>
+          <eventLogs/>
+          <counts>
+            <checkBox display="true" label="_729" type="totalCount" value="true">
+              <colorSelection label="_732" value="Red"/>
+              <checkBox label="_730" type="showBar" value="false">
+                <maxHeight display="true" label="_731" minValue="1" value="100"/>
+              </checkBox>
+            </checkBox>
+          </counts>
+          <document template="Process" value=""/>
+          <realTimePlots template="Process"/>
+          <color blue="255" green="255" red="255"/>
+          <icon display="true">DefaultIcon</icon>
+          <alternatives display="true" label="_5">
+            <alternative active="true" commentLabel="_81" name="Alt1" nameLabel="_160">
+              <connection id="32" name="Conn32" nameLabel="_160" style="BentConnector" type="StandardConnection" visible="true">
+                <showName display="true" label="_219" spacer=" " value="false"/>
+                <nameLocation>
+                  <location x="" y=""/>
+                </nameLocation>
+                <display display="true" label="_12">
+                  <lineWidth display="true" label="_150" value="100"/>
+                  <lineStyle display="true" label="_149" value="Solid"/>
+                </display>
+                <document template="Connector" value=""/>
+                <comment label="_81" value=""/>
+                <pad idref="5"/>
+                <pad idref="26"/>
+              </connection>
+              <connection id="33" name="Service Calls" nameLabel="_160" style="BentConnector" type="BranchConnection" visible="true">
+                <showName display="true" label="_219" spacer=" " value="true"/>
+                <nameLocation>
+                  <location x="27" y="-71"/>
+                </nameLocation>
+                <autoLabel display="true" label="_60" spacer=" " value="false"/>
+                <branchParameters display="true" label="_6">
+                  <option display="true" label="_173" value="false"/>
+                  <option display="true" label="_138" value="true">
+                    <entityList active="true" display="true" label="_120" type="Entity Type">
+                      <entity idref="18"/>
+                    </entityList>
+                  </option>
+                </branchParameters>
+                <display display="true" label="_12">
+                  <lineWidth display="true" label="_150" value="100"/>
+                  <lineStyle display="true" label="_149" value="Solid"/>
+                </display>
+                <document template="Connector" value=""/>
+                <comment label="_81" value=""/>
+                <pad idref="27"/>
+                <pad idref="30"/>
+              </connection>
+              <connection id="37" name="Sales Calls" nameLabel="_160" style="BentConnector" type="BranchConnection" visible="true">
+                <showName display="true" label="_219" spacer=" " value="true"/>
+                <nameLocation>
+                  <location x="25" y="68"/>
+                </nameLocation>
+                <autoLabel display="true" label="_60" spacer=" " value="false"/>
+                <branchParameters display="true" label="_6">
+                  <option display="true" label="_173" value="false"/>
+                  <option display="true" label="_138" value="true">
+                    <entityList active="true" display="true" label="_120" type="Entity Type">
+                      <entity idref="22"/>
+                    </entityList>
+                  </option>
+                </branchParameters>
+                <display display="true" label="_12">
+                  <lineWidth display="true" label="_150" value="100"/>
+                  <lineStyle display="true" label="_149" value="Solid"/>
+                </display>
+                <document template="Connector" value=""/>
+                <comment label="_81" value=""/>
+                <pad idref="27"/>
+                <pad idref="35"/>
+              </connection>
+              <connection id="38" name="Conn38" nameLabel="_160" style="BentConnector" type="StandardConnection" visible="true">
+                <showName display="true" label="_219" spacer=" " value="false"/>
+                <nameLocation>
+                  <location x="" y=""/>
+                </nameLocation>
+                <display display="true" label="_12">
+                  <lineWidth display="true" label="_150" value="100"/>
+                  <lineStyle display="true" label="_149" value="Solid"/>
+                </display>
+                <document template="Connector" value=""/>
+                <comment label="_81" value=""/>
+                <pad idref="31"/>
+                <pad idref="6"/>
+              </connection>
+              <connection id="39" name="Conn39" nameLabel="_160" style="BentConnector" type="StandardConnection" visible="true">
+                <showName display="true" label="_219" spacer=" " value="false"/>
+                <nameLocation>
+                  <location x="" y=""/>
+                </nameLocation>
+                <display display="true" label="_12">
+                  <lineWidth display="true" label="_150" value="100"/>
+                  <lineStyle display="true" label="_149" value="Solid"/>
+                </display>
+                <document template="Connector" value=""/>
+                <comment label="_81" value=""/>
+                <pad idref="36"/>
+                <pad idref="6"/>
+              </connection>
+              <process atomic="true" displayMethod="icon" displayOrder="front" id="25" locked="false" name="Route Calls" nameLabel="_160" parentIdRef="4" showName="false" showNameLabel="_219" type="Branch" useTextBlock="false" useTextBlockLabel="_646" visible="true">
+                <nameLocation>
+                  <location x="" y=""/>
+                </nameLocation>
+                <location height="32" width="32" x="288" y="279"/>
+                <pad id="26" name="in1" nameLabel="_160" type="InputPad">
+                  <placement border="west" offset="12"/>
+                  <nameLocation label="_103" spacer=" " value="false">
+                    <location x="-9" y="2"/>
+                  </nameLocation>
+                  <comment label="_81" value=""/>
+                </pad>
+                <pad id="27" name="out1" nameLabel="_160" type="OutputPad">
+                  <placement border="east" offset="14"/>
+                  <nameLocation label="_103" spacer=" " value="false">
+                    <location x="9" y="2"/>
+                  </nameLocation>
+                  <comment label="_81" value=""/>
+                </pad>
+                <localProcessAttributes serialId="0"/>
+                <resourceUsage displayTemplate="resourceUsageDialog">
+                  <policy policyType="one"/>
+                  <getResource/>
+                  <freeResource/>
+                  <interval display="true" label="_645">
+                    <intervalValue display="true" distribution="None" label="_255"/>
+                    <timeUnit display="true" label="_242" value="Hours"/>
+                  </interval>
+                  <checkBox type="releaseDown" value="false"/>
+                </resourceUsage>
+                <textBlock/>
+                <publishLink/>
+                <eventLogs/>
+                <counts>
+                  <checkBox display="true" label="_729" type="totalCount" value="true">
+                    <colorSelection label="_732" value="Red"/>
+                    <checkBox label="_730" type="showBar" value="false">
+                      <maxHeight display="true" label="_731" minValue="1" value="100"/>
+                    </checkBox>
+                  </checkBox>
+                  <checkBox display="true" label="_734" type="waitCount" value="false">
+                    <colorSelection label="_732" value="Red"/>
+                    <checkBox label="_730" type="showBar" value="false">
+                      <maxHeight display="true" label="_731" minValue="1" value="100"/>
+                    </checkBox>
+                  </checkBox>
+                  <checkBox display="true" label="_736" type="processingCount" value="false">
+                    <colorSelection label="_732" value="Red"/>
+                    <checkBox label="_730" type="showBar" value="false">
+                      <maxHeight display="true" label="_731" minValue="1" value="100"/>
+                    </checkBox>
+                  </checkBox>
+                </counts>
+                <document template="Branch" value=""/>
+                <comment label="_81" value=""/>
+                <realTimePlots template="Activity"/>
+                <icon display="true">Branch</icon>
+                <type display="true" label="_33">
+                  <typeOption display="true" label="_185" value="false">
+                    <stream display="true" label="_443" maxValue="215" minValue="1" value="1"/>
+                  </typeOption>
+                  <typeOption display="true" label="_58" value="false">
+                    <attribute allowObject="false" allowResource="false" display="true"/>
+                  </typeOption>
+                  <typeOption display="true" label="_118" value="true"/>
+                  <typeOption display="true" label="_1300" value="false"/>
+                  <typeOption display="true" label="_709" value="false"/>
+                  <typeOption display="true" label="_710" value="false"/>
+                </type>
+                <duration display="true" label="_14">
+                  <durationValue distribution="None" label="_255"/>
+                  <timeUnit label="_250" value="Hours"/>
+                </duration>
+                <collectactstats display="true" label="_72" value="false"/>
+                <collectactentstats display="true" label="_73" value="false"/>
+              </process>
+              <process atomic="true" displayMethod="icon" displayOrder="front" id="29" locked="false" name="Customer Service" nameLabel="_160" parentIdRef="4" showName="true" showNameLabel="_219" type="Delay" useTextBlock="false" useTextBlockLabel="_646" visible="true">
+                <nameLocation>
+                  <location x="" y=""/>
+                </nameLocation>
+                <comment label="_81" value=""/>
+                <location height="32" width="32" x="595" y="175"/>
+                <localProcessAttributes serialId="0"/>
+                <pad id="30" name="in1" nameLabel="_160" type="InputPad">
+                  <placement border="west" offset="12"/>
+                  <nameLocation label="_103" spacer=" " value="false">
+                    <location x="-9" y="2"/>
+                  </nameLocation>
+                  <comment label="_81" value=""/>
+                </pad>
+                <pad id="31" name="out1" nameLabel="_160" type="OutputPad">
+                  <placement border="east" offset="12"/>
+                  <nameLocation label="_103" spacer=" " value="false">
+                    <location x="9" y="2"/>
+                  </nameLocation>
+                  <comment label="_81" value=""/>
+                </pad>
+                <textBlock/>
+                <publishLink/>
+                <resourceUsage displayTemplate="resourceUsageDialog">
+                  <policy policyType="one"/>
+                  <getResource>
+                    <requiredResource idref="44">
+                      <quantity display="true" distribution="1.0" label="_250"/>
+                    </requiredResource>
+                  </getResource>
+                  <freeResource>
+                    <requiredResource idref="44">
+                      <quantity display="true" distribution="1.0" label="_250"/>
+                    </requiredResource>
+                  </freeResource>
+                  <interval display="true" label="_645">
+                    <intervalValue display="true" distribution="None" label="_255"/>
+                    <timeUnit display="true" label="_242" value="Hours"/>
+                  </interval>
+                  <checkBox type="releaseDown" value="false"/>
+                </resourceUsage>
+                <eventLogs/>
+                <counts>
+                  <checkBox display="true" label="_729" type="totalCount" value="true">
+                    <colorSelection label="_732" value="Red"/>
+                    <checkBox label="_730" type="showBar" value="false">
+                      <maxHeight display="true" label="_731" minValue="1" value="100"/>
+                    </checkBox>
+                  </checkBox>
+                  <checkBox display="true" label="_734" type="waitCount" value="false">
+                    <colorSelection label="_732" value="Red"/>
+                    <checkBox label="_730" type="showBar" value="false">
+                      <maxHeight display="true" label="_731" minValue="1" value="100"/>
+                    </checkBox>
+                  </checkBox>
+                  <checkBox display="true" label="_736" type="processingCount" value="false">
+                    <colorSelection label="_732" value="Red"/>
+                    <checkBox label="_730" type="showBar" value="false">
+                      <maxHeight display="true" label="_731" minValue="1" value="100"/>
+                    </checkBox>
+                  </checkBox>
+                </counts>
+                <document template="Delay" value=""/>
+                <realTimePlots template="Activity"/>
+                <icon display="true">Delay</icon>
+                <duration display="true" label="_14">
+                  <durationValue distribution="Nor(15.0,3.0,1)" label="_255"/>
+                  <timeUnit label="_250" value="Minutes"/>
+                </duration>
+                <collectactstats display="true" label="_72" value="false"/>
+                <collectactentstats display="true" label="_73" value="false"/>
+              </process>
+              <process atomic="true" displayMethod="icon" displayOrder="front" id="34" locked="false" name="Sales" nameLabel="_160" parentIdRef="4" showName="true" showNameLabel="_219" type="Delay" useTextBlock="false" useTextBlockLabel="_646" visible="true">
+                <nameLocation>
+                  <location x="" y=""/>
+                </nameLocation>
+                <comment label="_81" value=""/>
+                <location height="32" width="32" x="595" y="415"/>
+                <localProcessAttributes serialId="0"/>
+                <pad id="35" name="in1" nameLabel="_160" type="InputPad">
+                  <placement border="west" offset="12"/>
+                  <nameLocation label="_103" spacer=" " value="false">
+                    <location x="-9" y="2"/>
+                  </nameLocation>
+                  <comment label="_81" value=""/>
+                </pad>
+                <pad id="36" name="out1" nameLabel="_160" type="OutputPad">
+                  <placement border="east" offset="12"/>
+                  <nameLocation label="_103" spacer=" " value="false">
+                    <location x="9" y="2"/>
+                  </nameLocation>
+                  <comment label="_81" value=""/>
+                </pad>
+                <textBlock/>
+                <publishLink/>
+                <resourceUsage displayTemplate="resourceUsageDialog">
+                  <policy policyType="one"/>
+                  <getResource>
+                    <requiredResource idref="43">
+                      <quantity display="true" distribution="1.0" label="_250"/>
+                    </requiredResource>
+                  </getResource>
+                  <freeResource>
+                    <requiredResource idref="43">
+                      <quantity display="true" distribution="1.0" label="_250"/>
+                    </requiredResource>
+                  </freeResource>
+                  <interval display="true" label="_645">
+                    <intervalValue display="true" distribution="None" label="_255"/>
+                    <timeUnit display="true" label="_242" value="Hours"/>
+                  </interval>
+                  <checkBox type="releaseDown" value="false"/>
+                </resourceUsage>
+                <eventLogs/>
+                <counts>
+                  <checkBox display="true" label="_729" type="totalCount" value="true">
+                    <colorSelection label="_732" value="Red"/>
+                    <checkBox label="_730" type="showBar" value="false">
+                      <maxHeight display="true" label="_731" minValue="1" value="100"/>
+                    </checkBox>
+                  </checkBox>
+                  <checkBox display="true" label="_734" type="waitCount" value="false">
+                    <colorSelection label="_732" value="Red"/>
+                    <checkBox label="_730" type="showBar" value="false">
+                      <maxHeight display="true" label="_731" minValue="1" value="100"/>
+                    </checkBox>
+                  </checkBox>
+                  <checkBox display="true" label="_736" type="processingCount" value="false">
+                    <colorSelection label="_732" value="Red"/>
+                    <checkBox label="_730" type="showBar" value="false">
+                      <maxHeight display="true" label="_731" minValue="1" value="100"/>
+                    </checkBox>
+                  </checkBox>
+                </counts>
+                <document template="Delay" value=""/>
+                <realTimePlots template="Activity"/>
+                <icon display="true">Delay</icon>
+                <duration display="true" label="_14">
+                  <durationValue distribution="Tri(3.0,6.0,12.0,1)" label="_255"/>
+                  <timeUnit label="_250" value="Minutes"/>
+                </duration>
+                <collectactstats display="true" label="_72" value="false"/>
+                <collectactentstats display="true" label="_73" value="false"/>
+              </process>
+            </alternative>
+          </alternatives>
+          <checkBox display="true" label="_721" type="master" value="false"/>
+          <collectactstats display="true" label="_72" value="false"/>
+          <collectactentstats display="true" label="_73" value="false"/>
+        </process>
+        <process atomic="false" displayMethod="icon" displayOrder="front" id="7" locked="false" name="Complete Calls" nameLabel="_160" parentIdRef="0" showName="true" showNameLabel="_219" type="Process" useTextBlock="false" useTextBlockLabel="_646" visible="true">
+          <nameLocation>
+            <location x="" y=""/>
+          </nameLocation>
+          <location height="52" width="68" x="588" y="195"/>
+          <localProcessAttributes serialId="0"/>
+          <pad id="8" name="in1" nameLabel="_160" type="InputPad">
+            <placement border="west" offset="19"/>
+            <nameLocation label="_103" spacer=" " value="false">
+              <location x="-9" y="2"/>
+            </nameLocation>
+            <comment label="_81" value=""/>
+          </pad>
+          <comment label="_81" value=""/>
+          <textBlock>
+            <font bold="false" boldLabel="_65" color="Black" colorLabel="_79" display="true" family="Serif" familyLabel="_127" italic="false" italicLabel="_142" label="_19" size="10" sizeLabel="_224"/>
+            <showText display="true" label="_221" value="true"/>
+            <checkBox display="true" label="_647" type="addLabel" value="true">
+              <textLabel display="true" label="_648">
+                <props>
+                  <nameOrientation display="true" label="_649" orientation="x">
+                    <horizontal display="true" label="_533" value="true"/>
+                    <vertical display="true" label="_535" value="false"/>
+                  </nameOrientation>
+                  <checkBox display="true" label="_1355" type="includeAlt" value="false"/>
+                  <font bold="true" boldLabel="_65" color="Black" colorLabel="_79" display="true" family="Serif" familyLabel="_127" italic="false" italicLabel="_142" label="_19" size="12" sizeLabel="_224"/>
+                </props>
+              </textLabel>
+            </checkBox>
+            <textLine value="Complete"/>
+            <textLine value=""/>
+            <textLine value="Calls"/>
+          </textBlock>
+          <publishLink/>
+          <eventLogs/>
+          <counts>
+            <checkBox display="true" label="_729" type="totalCount" value="true">
+              <colorSelection label="_732" value="Red"/>
+              <checkBox label="_730" type="showBar" value="false">
+                <maxHeight display="true" label="_731" minValue="1" value="100"/>
+              </checkBox>
+            </checkBox>
+          </counts>
+          <document template="Process" value=""/>
+          <realTimePlots template="Process"/>
+          <color blue="255" green="255" red="255"/>
+          <icon display="true">DefaultIcon</icon>
+          <alternatives display="true" label="_5">
+            <alternative active="true" commentLabel="_81" name="Alt1" nameLabel="_160">
+              <connection id="42" name="Conn42" nameLabel="_160" style="BentConnector" type="StandardConnection" visible="true">
+                <showName display="true" label="_219" spacer=" " value="false"/>
+                <nameLocation>
+                  <location x="" y=""/>
+                </nameLocation>
+                <display display="true" label="_12">
+                  <lineWidth display="true" label="_150" value="100"/>
+                  <lineStyle display="true" label="_149" value="Solid"/>
+                </display>
+                <document template="Connector" value=""/>
+                <comment label="_81" value=""/>
+                <pad idref="8"/>
+                <pad idref="41"/>
+              </connection>
+              <process atomic="true" displayMethod="icon" displayOrder="front" id="40" locked="false" name="Call Complete" nameLabel="_160" parentIdRef="7" showName="true" showNameLabel="_219" type="Dispose" useTextBlock="false" useTextBlockLabel="_646" visible="true">
+                <nameLocation>
+                  <location x="" y=""/>
+                </nameLocation>
+                <location height="32" width="32" x="625" y="256"/>
+                <localProcessAttributes serialId="0"/>
+                <pad id="41" name="in1" nameLabel="_160" type="InputPad">
+                  <placement border="west" offset="12"/>
+                  <nameLocation label="_103" spacer=" " value="false">
+                    <location x="-9" y="2"/>
+                  </nameLocation>
+                  <comment label="_81" value=""/>
+                </pad>
+                <comment label="_81" value=""/>
+                <textBlock/>
+                <publishLink/>
+                <eventLogs/>
+                <counts>
+                  <checkBox display="true" label="_729" type="totalCount" value="true">
+                    <colorSelection label="_732" value="Red"/>
+                    <checkBox label="_730" type="showBar" value="false">
+                      <maxHeight display="true" label="_731" minValue="1" value="100"/>
+                    </checkBox>
+                  </checkBox>
+                </counts>
+                <document template="Dispose" value=""/>
+                <realTimePlots template="Activity"/>
+                <icon display="true">Dispose</icon>
+                <maxentitycount display="true" distribution="None" label="_152"/>
+                <collectactstats display="true" label="_72" value="false"/>
+                <collectactentstats display="true" label="_73" value="false"/>
+              </process>
+            </alternative>
+          </alternatives>
+          <checkBox display="true" label="_721" type="master" value="false"/>
+          <collectactstats display="true" label="_72" value="false"/>
+          <collectactentstats display="true" label="_73" value="false"/>
+        </process>
+      </alternative>
+    </alternatives>
+  </process>
+  <resources>
+    <resource display="true" id="43" name="Sales Rep" nameLabel="_160" type="Resource">
+      <localResourceAttributes serialId="0"/>
+      <downtime display="true" label="_107" mnemonic="M" template="downtime" type="Empty"/>
+      <cost>
+        <resourceCost type="Nonconsumable">
+          <variableCosts display="true" label="_41">
+            <costPerEntity display="true" distribution="0.0" label="_253"/>
+            <costPerUnit display="true" distribution="0.0" label="_93"/>
+            <hourlyCost display="true" distribution="12.0" label="_91" timeUnit="Hours"/>
+            <timeUnit display="true" label="_241" value="Hours"/>
+          </variableCosts>
+          <fixedCosts display="true" label="_18">
+            <perUnit display="true" distribution="0.0" label="_178"/>
+            <costingFrequency display="true" label="_272" value="Quarterly"/>
+          </fixedCosts>
+          <checkBox display="true" label="_1328" type="costParent" value="false">
+            <comboBox display="true" idref="" value=""/>
+          </checkBox>
+          <currency display="true" label="_98" value="USD"/>
+          <collectCostStats display="true" label="_74" value="true"/>
+        </resourceCost>
+      </cost>
+      <comment display="true" label="_80" value=""/>
+      <document template="Resource" value=""/>
+      <realTimePlots template="Resource"/>
+      <units display="true" distribution="4" label="_250"/>
+      <fractional display="true" label="_128" value="false"/>
+      <consumable display="true" label="_85" value="false"/>
+      <collectResStats display="true" label="_76" value="false"/>
+      <collectResActStats display="true" label="_77" value="false"/>
+      <checkBox display="true" label="_694" type="collectResShiftStats" value="false"/>
+    </resource>
+    <resource display="true" id="44" name="Service Rep" nameLabel="_160" type="Resource">
+      <localResourceAttributes serialId="0"/>
+      <downtime display="true" label="_107" mnemonic="M" template="downtime" type="Empty"/>
+      <cost>
+        <resourceCost type="Nonconsumable">
+          <variableCosts display="true" label="_41">
+            <costPerEntity display="true" distribution="none" label="_253"/>
+            <costPerUnit display="true" distribution="0.0" label="_93"/>
+            <hourlyCost display="true" distribution="15.0" label="_91" timeUnit="Hours"/>
+            <timeUnit display="true" label="_241" value="Hours"/>
+          </variableCosts>
+          <fixedCosts display="true" label="_18">
+            <perUnit display="true" distribution="0.0" label="_178"/>
+            <costingFrequency display="true" label="_272" value="Quarterly"/>
+          </fixedCosts>
+          <checkBox display="true" label="_1328" type="costParent" value="false">
+            <comboBox display="true" idref="" value=""/>
+          </checkBox>
+          <currency display="true" label="_98" value="USD"/>
+          <collectCostStats display="true" label="_74" value="true"/>
+        </resourceCost>
+      </cost>
+      <comment display="true" label="_80" value=""/>
+      <document template="Resource" value=""/>
+      <realTimePlots template="Resource"/>
+      <units display="true" distribution="3" label="_250"/>
+      <fractional display="true" label="_128" value="false"/>
+      <consumable display="true" label="_85" value="false"/>
+      <collectResStats display="true" label="_76" value="false"/>
+      <collectResActStats display="true" label="_77" value="false"/>
+      <checkBox display="true" label="_694" type="collectResShiftStats" value="false"/>
+    </resource>
+  </resources>
+  <entityTypes>
+    <entityType display="true" id="18" name="Service Calls" nameLabel="_159" selected="true">
+      <attrexpr button1Label="_118" button2Label="_116" display="true" label="_11" placement="south">
+        <localEntityAttributes serialId="0"/>
+        <localEntityTypeAttributes serialId="0"/>
+        <entityTypeExpressions/>
+        <entityInstanceExpressions/>
+      </attrexpr>
+      <comment display="true" label="_80" value=""/>
+      <document template="EntityType" value=""/>
+      <realTimePlots template="Entity"/>
+      <icon display="true" label="_136">BlackDot</icon>
+      <priority display="true" label="_183" maxValue="100" minValue="1" value="1"/>
+      <checkBox display="true" label="_182" type="preemptLowerPriorityEntities" value="false"/>
+      <collectEntStats display="true" label="_75" placement="south" value="false"/>
+    </entityType>
+    <entityType display="true" id="22" name="Sales Calls" nameLabel="_159" selected="true">
+      <attrexpr button1Label="_118" button2Label="_116" display="true" label="_11" placement="south">
+        <localEntityAttributes serialId="0"/>
+        <localEntityTypeAttributes serialId="0"/>
+        <entityTypeExpressions/>
+        <entityInstanceExpressions/>
+      </attrexpr>
+      <comment display="true" label="_80" value=""/>
+      <document template="EntityType" value=""/>
+      <realTimePlots template="Entity"/>
+      <icon display="true" label="_136">BlueDot</icon>
+      <priority display="true" label="_183" maxValue="100" minValue="1" value="1"/>
+      <checkBox display="true" label="_182" type="preemptLowerPriorityEntities" value="false"/>
+      <collectEntStats display="true" label="_75" placement="south" value="false"/>
+    </entityType>
+  </entityTypes>
+  <globalEntityAttributes/>
+  <globalEntityTypeAttributes/>
+  <globalResourceAttributes/>
+  <globalProcessAttributes/>
+  <globalModelAttributes/>
+  <namedDistributionList/>
+  <tabularDistributionList/>
+  <functionList/>
+  <timeStampList/>
+  <keysList/>
+  <customPlotList/>
+  <customReportList/>
+  <dashboardList/>
+  <downtimes/>
+  <shifts/>
+  <autoFitList/>
+  <metamodelList/>
+  <orgModelList/>
+  <spreadsheetList/>
+  <databaseList/>
+  <fileList/>
+  <scenarioList/>
+  <exportResultsDatabaseList/>
+  <exportResultsSpreadsheetList/>
+  <xref>
+    <object idref="18">
+      <usage idref="15"/>
+      <usage idref="33"/>
+    </object>
+    <object idref="22">
+      <usage idref="37"/>
+      <usage idref="19"/>
+    </object>
+    <object idref="43">
+      <usage idref="34"/>
+    </object>
+    <object idref="44">
+      <usage idref="29"/>
+    </object>
+  </xref>
+  <familyNames>
+    <family name="Undefined"/>
+  </familyNames>
+  <tags/>
+  <runSettings>
+    <simulationPeriod display="true" label="_35">
+      <startEnd simPeriod="true" type="Standard">
+        <dateTime display="true" label="_229" type="DateSmallLabel">
+          <labelPanel display="true" label="_270"/>
+          <month display="true" value="01"/>
+          <day display="true" value="01"/>
+          <year display="true" value="2019"/>
+          <hour display="true" value="00"/>
+          <minute display="true" value="00"/>
+          <seconds display="true" value="00"/>
+          <milliseconds display="true" value="000"/>
+          <microseconds display="true" value="000"/>
+          <nanoseconds display="true" value="000"/>
+          <weekday label="_101" value=""/>
+        </dateTime>
+        <dateTime display="true" label="_113" type="DateNoMaskSmallLabel">
+          <labelPanel label="_270"/>
+          <month display="true" value="01"/>
+          <day display="true" value="02"/>
+          <year display="true" value="2019"/>
+          <hour display="true" value="00"/>
+          <minute display="true" value="00"/>
+          <seconds display="true" value="00"/>
+          <milliseconds display="true" value="000"/>
+          <microseconds display="true" value="000"/>
+          <nanoseconds display="true" value="000"/>
+          <weekday label="_101" value=""/>
+        </dateTime>
+      </startEnd>
+    </simulationPeriod>
+    <leftSide>
+      <warmup display="true" label="_258" value="false"/>
+      <resetRandomStreams display="true" label="_204" value="false"/>
+      <resetSystem display="true" label="_205" value="true"/>
+      <checkBox display="true" label="_257" type="runVerify" value="true"/>
+      <rmiHost display="true" label="_308" value="localhost"/>
+    </leftSide>
+    <rightSide display="true">
+      <numberOfReplications display="true" label="_164" value="1"/>
+      <warmupLength display="true" label="_259" value="0"/>
+      <timeUnit display="true" label="_260" type="warmup" value="Hours"/>
+      <timeUnit display="true" label="_222" type="simulation" value="Hours"/>
+      <rmiPort display="true" label="_309" maxValue="65535" minValue="1024" value="1099"/>
+    </rightSide>
+    <costPeriods>
+      <periods display="true">
+        <costPeriod localId="1" name="Quarter1" nameLabel="_160">
+          <date display="true" label="_10">
+            <startEnd type="Standard">
+              <dateTime display="true" label="_229" type="DateNoMaskSmallLabel">
+                <labelPanel label="_270"/>
+                <month active="false" display="true" value="01"/>
+                <day active="false" display="true" value="01"/>
+                <year active="false" display="true" value="2019"/>
+                <hour active="false" display="true" value="00"/>
+                <minute active="false" display="true" value="00"/>
+                <seconds active="false" display="true" value="00"/>
+                <milliseconds active="false" display="true" value="000"/>
+                <microseconds active="false" display="true" value="000"/>
+                <nanoseconds active="false" display="true" value="000"/>
+                <weekday label="_101" value=""/>
+              </dateTime>
+              <dateTime display="true" label="_113" type="DateNoMaskSmallLabel">
+                <labelPanel label="_270"/>
+                <month active="false" display="true" value="01"/>
+                <day active="false" display="true" value="02"/>
+                <year active="false" display="true" value="2019"/>
+                <hour active="false" display="true" value="00"/>
+                <minute active="false" display="true" value="00"/>
+                <seconds active="false" display="true" value="00"/>
+                <milliseconds active="false" display="true" value="000"/>
+                <microseconds active="false" display="true" value="000"/>
+                <nanoseconds active="false" display="true" value="000"/>
+                <weekday label="_101" value=""/>
+              </dateTime>
+            </startEnd>
+          </date>
+        </costPeriod>
+      </periods>
+      <currency display="true" label="_97" value="USD"/>
+      <costingFrequency display="true" label="_179" value="Quarterly"/>
+    </costPeriods>
+    <checkBox display="true" label="_406" type="debugTrace" value="false"/>
+    <expOptions display="true">
+      <output display="true" label="_668">
+        <checkBox display="true" label="_666" type="suppress" value="false"/>
+        <checkBox display="true" label="_667" type="redirect" value="false">
+          <textLine display="true" value=""/>
+        </checkBox>
+      </output>
+      <checkBox display="true" label="_711" type="breakPoints" value="false"/>
+    </expOptions>
+    <timeserver>
+      <useTimeServer>false</useTimeServer>
+      <ip>localhost</ip>
+      <port>26100</port>
+      <group/>
+      <player/>
+      <syncTimeUnit>None</syncTimeUnit>
+    </timeserver>
+    <remoteTransfer>
+      <port>26200</port>
+    </remoteTransfer>
+    <randomOptions value="Legacy"/>
+  </runSettings>
+  <animationSettings label="_53">
+    <animationChecks display="true" label="_55">
+      <animationCheck label="_216" type="showClock" value="true"/>
+      <animationCheck label="_217" type="showCounts" value="true"/>
+      <animationCheck label="_218" type="showEntities" value="true"/>
+      <animationCheck label="_251" type="updateDynamicEntities" value="false"/>
+    </animationChecks>
+    <animationSpeed display="true" label="_54" maxValue="100.0" minValue="1.0" numberType="double" precision="2" value="20"/>
+    <showAnimation value="false"/>
+  </animationSettings>
+  <scenarios value="false"/>
+  <updatePlots value="true"/>
+  <globalStatisticsCollection>
+    <checkBox display="true" label="_72" type="collectactstats" value="false"/>
+    <statButton display="true" label="_67" type="collectactstats"/>
+    <checkBox display="true" label="_75" type="collectEntStats" value="true"/>
+    <statButton display="true" label="_69" type="collectEntStats"/>
+    <checkBox display="true" label="_76" type="collectResStats" value="true"/>
+    <statButton display="true" label="_70" type="collectResStats"/>
+    <checkBox display="true" label="_658" type="collectConnStats" value="false"/>
+    <statButton display="true" label="_656" type="collectConnStats"/>
+    <checkBox display="true" label="_77" type="collectResActStats" value="false"/>
+    <statButton display="true" label="_71" type="collectResActStats"/>
+    <checkBox display="true" label="_694" type="collectResShiftStats" value="false"/>
+    <statButton display="true" label="_695" type="collectResShiftStats"/>
+    <checkBox display="true" label="_73" type="collectactentstats" value="false"/>
+    <statButton display="true" label="_68" type="collectactentstats"/>
+    <checkBox display="true" label="_659" type="collectConnEntStats" value="false"/>
+    <statButton display="true" label="_657" type="collectConnEntStats"/>
+    <spacer count="0.5" display="true"/>
+    <timeUnit display="true" label="_174" value="Hours"/>
+    <checkBox display="true" label="_129" type="generateStandardReportBatch" value="false"/>
+  </globalStatisticsCollection>
+</model>
