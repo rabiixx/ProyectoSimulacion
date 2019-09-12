@@ -1,0 +1,85 @@
+SIMPROCESS Standard Report for As-Is
+Simulation Initiated at Thu Sep 12 11:20:46 2019
+Simulation Concluded at Thu Sep 12 11:20:53 2019
+Simulation Run Duration 00:00:07.664
+
+Model Start Date/Time    : 01/01/2019 00:00:00:000:000:000
+Model End Date/Time      : 01/02/2019 00:00:00:000:000:000
+Actual Start Date/Time   : 01/01/2019 00:00:00:000:000:000
+Actual End Date/Time     : 01/02/2019 00:00:00:000:000:000
+Actual Run Duration      : 1 day 00:00:00:000:000:000
+
+
+Entity : Total Count - Observation Based : Replication 1
+
+                    Total      Remaining  Total
+Entity Names        Generated  In System  Processed
+Sales Calls               504          0        504
+Service Calls             227          6        221
+
+
+Entity : Count By State - Time Weighted : Replication 1
+
+                    Total In System-----   Processing---------  Wait For Resources--  Hold For Conditions-  Traveling-----------
+Entity Names          Average    Maximum    Average    Maximum    Average    Maximum    Average    Maximum    Average    Maximum
+Sales Calls             2,700          9      2,474          4      0,227          5      0,000          0      0,000          1
+Service Calls           3,229         10      2,294          3      0,934          7      0,000          0      0,000          1
+
+
+Entity : Cycle Time (in Hours) By State - Observation Based : Replication 1
+
+                               Total In System-----   Processing---------  Wait For Resources--  Hold For Conditions-   Traveling----------
+Entity Names        #Observed    Average    Maximum    Average    Maximum    Average    Maximum    Average    Maximum    Average    Maximum
+Sales Calls               504      0,129      0,277      0,118      0,193      0,011      0,142      0,000      0,000      0,000      0,000
+Service Calls             221      0,343      0,822      0,247      0,364      0,096      0,520      0,000      0,000      0,000      0,000
+
+
+Resource : Number of Units By State - TimeWeighted : Replication 1
+
+                                                         --------Idle--------  --------Busy--------  --Planned Downtime--  -Unplanned Downtime-  ------Reserved------
+Resource Names      Defined Capacity           Capacity    Average    Maximum    Average    Maximum    Average    Maximum    Average    Maximum    Average    Maximum
+Sales Rep               4,000                     4,000      1,526      4,000      2,474      4,000      0,000      0,000      0,000      0,000      0,000      0,000
+Service Rep             3,000                     3,000      0,706      3,000      2,294      3,000      0,000      0,000      0,000      0,000      0,000      0,000
+
+
+Resource : Percent Utilization By State : Replication 1
+
+Resource Names            Idle        Busy     Planned   Unplanned    Reserved
+Sales Rep              38,156%     61,844%      0,000%      0,000%      0,000%
+Service Rep            23,521%     76,479%      0,000%      0,000%      0,000%
+
+
+Resource : Percent Utilization By State When Available: Replication 1
+
+Resource Names            Idle        Busy    Reserved
+Sales Rep              38,156%     61,844%      0,000%
+Service Rep            23,521%     76,479%      0,000%
+
+
+Resource By Activity - Cost Of Processing (USD) : Replication 1
+
+                                                                Variable    Absorption
+Period Names        Resource Names      Activity Names              Cost          Cost
+Quarter1            Service Rep         Customer Service          825,97        825,97
+Quarter1            Sales Rep           Sales                     712,44        712,44
+Total                                                            1538,42       1538,42
+
+
+Resource By Entity - Cost Of Processing (USD) : Replication 1
+
+                                                                Variable    Absorption
+Period Names        Resource Names      Entity Names                Cost          Cost
+Quarter1            Service Rep         Service Calls             825,97        825,97
+Quarter1            Sales Rep           Sales Calls               712,44        712,44
+Total                                                            1538,42       1538,42
+
+
+Activity By Entity - Cost Of Processing (USD) : Replication 1
+
+                                                                Variable    Absorption
+Period Names        Activity Names      Entity Names                Cost          Cost
+Quarter1            Sales               Sales Calls               712,44        712,44
+Quarter1            Customer Service    Service Calls             825,97        825,97
+Total                                                            1538,42       1538,42
+
+
