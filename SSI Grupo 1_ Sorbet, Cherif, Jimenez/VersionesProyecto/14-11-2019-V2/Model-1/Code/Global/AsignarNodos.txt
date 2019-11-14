@@ -1,0 +1,102 @@
+Arg1: INTEGER;
+Arg2: INTEGER;
+
+arrayAsignados : ANYOBJ;
+nNecesarios : INTEGER;
+distDerecha : INTEGER;
+distIzquierda : INTEGER; 
+nAsignados : INTEGER; 
+nDerecha : INTEGER;
+nIzquierda : INTEGER;
+nPosibles : INTEGER;
+id: INTEGER;
+
+nNecesarios := Arg1;
+id:= Arg2;
+nPosibles := Model.nodosLibres;
+arrayAsignados := CreateArray("INTEGER", 1,  nNecesarios);
+
+
+{Realizamos la busqueda del primer nodo libre}
+i : INTEGER;
+i := 0;
+
+WHILE Model.arrayIDPrograma[i]<> -1
+	i := i +1;
+END WHILE ;
+
+Model.arrayIDPrograma[i]:=id;
+nDerecha := i;
+nIzquierda := i;
+nAsignados := 1;
+OUTPUT("NUMERO DE NODOS QUE TIENE QUE OCUPAR")
+OUTPUT(nNecesarios);
+{Empezamos el algoritmo}
+OUTPUT("IMPRIMO LA I",i);
+distDerecha := Function("DistanciaDerecha", nDerecha);
+distIzquierda := Function("DistanciaIzquierda", nIzquierda);
+WHILE (nAsignados < nNecesarios)
+	OUTPUT("EPA");
+	IF distDerecha = distIzquierda AND  distDerecha = -1 {No ha encontrado otro nodo libre}
+		OUTPUT("NO HAY NODOS LIBRES")
+		OUTPUT(nPosibles);
+		nPosibles := nPosibles - nAsignados;
+		IF nPosibles < nNecesarios
+			RETURN -1;
+		ELSE
+			{Borramos todos los nodos que hemos guardado}
+			FOR i:=0 TO 63
+				IF(Model.arrayIDPrograma[i]=id)
+					Model.arrayIDPrograma[i]:=-1;
+				END IF;
+			END FOR;
+			{Buscamos el siguiente nodo libre hacia la derecha}
+			i := nDerecha;
+			WHILE Model.arrayIDPrograma[i]<> -1
+				i := i +1;
+			END WHILE;
+			nDerecha := i;
+			nIzquierda := i;
+			nAsignados := 1;
+			distDerecha := Function("DistanciaDerecha", nDerecha);
+			distIzquierda := -1;
+		END IF;
+	ELSE
+		IF (distDerecha <= distIzquierda)
+			nDerecha := Function("BuscarNodoDerecha", nDerecha);
+			Model.arrayIDPrograma[nDerecha]:=id;
+			distDerecha := Function("DistanciaDerecha", nDerecha);
+			OUTPUT("DERECHA");
+			OUTPUT(nDerecha);
+			
+		ELSE	
+			nIzquierda := Function("BuscarNodoIzquierda", nIzquierda);
+			Model.arrayIDPrograma[nIzquierda]:=id;
+			distIzquierda := Function("DistanciaIzquierda", nIzquierda);
+			OUTPUT("izquiwrda");
+			OUTPUT(nIzquierda);
+		END IF;
+		nAsignados := nAsignados + 1;
+	END IF;
+END WHILE ;
+{Ocupamos los canales}
+j:INTEGER;
+i:=nIzquierda;
+WHILE (i<>nDerecha)
+	j:=0;
+	WHILE ((j < Model.nCanales) AND GetArrayValue(Model.arrayCanales, j, i) <> -1)
+		j:= j +1;
+	END WHILE;
+	SetArrayValue(Model.arrayCanales, j,i, id);
+	i:=i+1;
+	IF(i=64)
+		i:=0;
+	END IF;
+END WHILE;
+{OUTPUT("EMPIEZA AQUÍ");
+FOR i:=0 TO 63
+	OUTPUT(i);
+	OUTPUT(Model.arrayIDPrograma[i]);
+END FOR;
+	}
+RETURN 1;

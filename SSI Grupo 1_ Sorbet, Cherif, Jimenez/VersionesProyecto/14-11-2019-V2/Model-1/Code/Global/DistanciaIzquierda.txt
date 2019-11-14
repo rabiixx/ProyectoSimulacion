@@ -1,0 +1,14 @@
+Arg1 : INTEGER;
+nIzquierda : INTEGER;
+
+nIzquierda := Function("BuscarNodoIzquierda",Arg1);
+
+IF nIzquierda = -1
+	RETURN -1
+ELSE 
+	IF Arg1 > nIzquierda
+		RETURN Arg1 - nIzquierda;
+	ELSE 
+		RETURN 64 - Arg1 + nIzquierda;
+	END IF;
+END IF;

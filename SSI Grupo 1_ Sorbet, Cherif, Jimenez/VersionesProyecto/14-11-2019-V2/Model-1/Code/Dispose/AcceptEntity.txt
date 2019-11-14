@@ -1,0 +1,31 @@
+gate:ANYOBJ;
+primero:ANYOBJ;
+respuesta:INTEGER;
+
+{LO DE LOS TIEMPOS}
+IF Entity.Corto = TRUE
+	IF Entity.tServicio <= 12.0
+		Model.numProgramasCortosOK := Model.numProgramasCortosOK + 1.0;
+	ELSE
+		Model.numProgramasCortosBAD := Model.numProgramasCortosBAD + 1.0;
+	END IF;
+ELSE 
+	IF Entity.tServicio <= 36.0
+		Model.numProgramasLargosOK := Model.numProgramasLargosOK + 1.0;
+	ELSE
+		Model.numProgramasLargosBAD := Model.numProgramasLargosBAD + 1.0;
+	END IF;
+END IF;
+
+Model.numProgramasTotal := Model.numProgramasTotal + 1.0;
+
+{COMPROBAMOS SI PODEMOS ABRIR LA PUERTA}
+
+gate:=Gate("ColaProgramasGate");
+IF(gate.NumberOnHold<>0)
+	primero:=GetEntity(gate,1);{Accedemos al primero}
+	respuesta:=Function("AsignarNodos",primero.nProcesos,primero.SequenceNum);
+	IF(respuesta=1)
+		GenerateEntity("Aceptador");
+	END IF;
+END IF;

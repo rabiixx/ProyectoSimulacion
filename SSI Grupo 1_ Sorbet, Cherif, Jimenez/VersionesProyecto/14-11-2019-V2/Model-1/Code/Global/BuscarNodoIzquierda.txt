@@ -1,0 +1,28 @@
+Arg1 : INTEGER;
+nActual : INTEGER;
+i: INTEGER;
+
+nActual:= Arg1;
+IF (nActual = 0)
+		nActual := 63;
+	ELSE
+		nActual := nActual - 1;
+	END IF;
+WHILE (Model.arrayIDPrograma[nActual] <> -1)
+	i:=0;
+	WHILE ((i < Model.nCanales) AND GetArrayValue(Model.arrayCanales, i, nActual-1) <> -1)
+		i:= i +1;
+	END WHILE;
+
+	IF GetArrayValue(Model.arrayCanales, i, nActual-1) <> -1
+		RETURN -1;
+	END IF;
+
+
+	IF (nActual = 0)
+		nActual := 63;
+	ELSE
+		nActual := nActual - 1;
+	END IF;
+END WHILE;
+RETURN nActual;
