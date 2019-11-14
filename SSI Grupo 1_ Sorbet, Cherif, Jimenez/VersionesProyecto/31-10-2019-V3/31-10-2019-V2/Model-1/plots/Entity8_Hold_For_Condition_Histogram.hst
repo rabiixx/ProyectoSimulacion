@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="yes"?>
+<plot>
+<title>Entity8 Hold For Condition Histogram</title>
+<xLabel>Value</xLabel>
+<yLabel>Number</yLabel>
+<barGraph width="1.0"/>
+<dataset name="null" rgb="-65536">
+<p x="0.0" y="1.0"/>
+</dataset>
+</plot>

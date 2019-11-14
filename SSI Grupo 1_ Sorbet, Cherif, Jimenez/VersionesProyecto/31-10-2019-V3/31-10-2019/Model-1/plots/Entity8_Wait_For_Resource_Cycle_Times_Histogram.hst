@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="yes"?>
+<plot>
+<title>Entity8 Wait For Resource Cycle Times Histogram</title>
+<xLabel>Value in Hours</xLabel>
+<yLabel>Number</yLabel>
+<barGraph width="1.0"/>
+<dataset name="null" rgb="-65536">
+<p x="0.0" y="6.0"/>
+</dataset>
+</plot>

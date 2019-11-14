@@ -1,0 +1,17 @@
+Model.nodosLibres := Model.nodosLibres + Entity.nProcesos;
+i: INTEGER;
+{Liberar los nodos ocupados por el programa que se ha ido}
+FOR i:= 0 TO 63
+	IF Entity.SequenceNum = Model.arrayIDPrograma[i];
+		Model.arrayIDPrograma[i]:= -1;
+	END IF;
+	FOR j:=0 TO Model.nCanales
+		IF Entity.SequenceNum = GetArrayValue(Model.arrayCanales,i,j)
+			SetArrayValue(Model.arrayCanales,i,j,-1);
+			EXIT;
+		END IF;
+	END FOR;
+END FOR;
+
+
+{IF Entity.nodosLibres >=}

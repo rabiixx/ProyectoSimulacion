@@ -1,7 +1,0 @@
-delay : REAL;
-
-delay := SimTime - Entity.PreviousTime;
-Model.DelaySales:= Model.DelaySales + delay;
-IF Model.MaxDelaySales < delay
-	Model.MaxDelaySales := delay;
-END IF

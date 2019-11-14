@@ -1,0 +1,5 @@
+x : REAL;
+
+x := Entity.Type.tExecIdeal * (1 + 0.2*nCanales*(1 + 0.15 * Lmax));
+
+RETURN x;

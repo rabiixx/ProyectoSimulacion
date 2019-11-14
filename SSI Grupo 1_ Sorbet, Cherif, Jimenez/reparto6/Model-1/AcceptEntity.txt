@@ -1,0 +1,5 @@
+aceptado: BOOLEAN;
+aceptado := Function("FiltroPeso",GetAttributeValue(Entity.Tank.Peso),GetAttributeValue(pesoAccept));
+IF NOT aceptado 
+	DeactivateGenerate("Generate4")
+END IF

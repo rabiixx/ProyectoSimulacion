@@ -1,0 +1,5 @@
+x, y : REAL;
+x := Entity.tEnCola;
+y := Entity.tExecReal;
+Entity.tServicio := x + y;
+{Entity.Type.tServicio := Entity.Type.tEnCola + Entity.Type.tExecReal;}
