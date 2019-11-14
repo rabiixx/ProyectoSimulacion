@@ -1,0 +1,17 @@
+nProc :INTEGER;
+tempTExecIdeal : REAL;
+
+tempTExecIdeal := Function("Funcion_ejecucion_ideal");
+{SetAttributeValue("tExecIdeal", tempTExecIdeal);}
+Entity.tExecIdeal := tempTExecIdeal;
+
+nProc := DrawIntegerSample("BIN(14,0.5)");
+nProc:=nProc+2;
+Entity.nProcesos := nProc;
+{SetAttributeValue("nProcesos", nProc);}
+
+IF tempTExecIdeal < 1.0
+	SetAttributeValue("Corto",TRUE);
+ELSE
+	SetAttributeValue("Corto",FALSE);
+END IF;

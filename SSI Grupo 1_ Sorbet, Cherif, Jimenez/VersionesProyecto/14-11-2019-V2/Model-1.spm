@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><model fileName="C:\Users\UPNA\Desktop\Modelo1\Model-1.spm" modelId="16dfd6214bd" name="Model-1" serialId="114">
-  <version build="18213" major="6" minor="3" release="6.3.1"/>
+<?xml version="1.0" encoding="UTF-8"?><model fileName="C:\Users\UPNA\Documents\GitHub\ProyectoSimulacion\SSI Grupo 1_ Sorbet, Cherif, Jimenez\VersionesProyecto\14-11-2019-V2\Model-1.spm" modelId="16dfd6214bd" name="Model-1" serialId="117">
+  <version build="19620" major="6" minor="4" release="6.4.1"/>
   <properties>
     <author label="_555" value=""/>
     <manager label="_590" value=""/>
@@ -7,35 +7,8 @@
     <modelVersion label="_1354" value=""/>
     <imported label="_1351" value=""/>
     <created label="_592" value="1571914126525"/>
-    <saved label="_593" value="1573740342831"/>
+    <saved label="_593" value="1573753308101"/>
     <editLog label="_595">
-      <edit user="UPNA" value="1573727585409"/>
-      <edit user="UPNA" value="1573727617832"/>
-      <edit user="UPNA" value="1573727686363"/>
-      <edit user="UPNA" value="1573729852239"/>
-      <edit user="UPNA" value="1573730381606"/>
-      <edit user="UPNA" value="1573730426437"/>
-      <edit user="UPNA" value="1573730562382"/>
-      <edit user="UPNA" value="1573730756638"/>
-      <edit user="UPNA" value="1573730830847"/>
-      <edit user="UPNA" value="1573730881958"/>
-      <edit user="UPNA" value="1573730966183"/>
-      <edit user="UPNA" value="1573731047767"/>
-      <edit user="UPNA" value="1573731139287"/>
-      <edit user="UPNA" value="1573731215039"/>
-      <edit user="UPNA" value="1573731322287"/>
-      <edit user="UPNA" value="1573731419648"/>
-      <edit user="UPNA" value="1573731470598"/>
-      <edit user="UPNA" value="1573731521928"/>
-      <edit user="UPNA" value="1573731589928"/>
-      <edit user="UPNA" value="1573731642072"/>
-      <edit user="UPNA" value="1573731685752"/>
-      <edit user="UPNA" value="1573731853455"/>
-      <edit user="UPNA" value="1573731898880"/>
-      <edit user="UPNA" value="1573731962665"/>
-      <edit user="UPNA" value="1573732083016"/>
-      <edit user="UPNA" value="1573732152168"/>
-      <edit user="UPNA" value="1573732197904"/>
       <edit user="UPNA" value="1573732334896"/>
       <edit user="UPNA" value="1573732436010"/>
       <edit user="UPNA" value="1573732519801"/>
@@ -59,6 +32,33 @@
       <edit user="UPNA" value="1573735519940"/>
       <edit user="UPNA" value="1573735838990"/>
       <edit user="UPNA" value="1573740342831"/>
+      <edit user="UPNA" value="1573748830779"/>
+      <edit user="UPNA" value="1573748949451"/>
+      <edit user="UPNA" value="1573748997549"/>
+      <edit user="UPNA" value="1573749112107"/>
+      <edit user="UPNA" value="1573750395141"/>
+      <edit user="UPNA" value="1573750504692"/>
+      <edit user="UPNA" value="1573750617201"/>
+      <edit user="UPNA" value="1573750659236"/>
+      <edit user="UPNA" value="1573750719786"/>
+      <edit user="UPNA" value="1573750768835"/>
+      <edit user="UPNA" value="1573750820954"/>
+      <edit user="UPNA" value="1573750863058"/>
+      <edit user="UPNA" value="1573750904586"/>
+      <edit user="UPNA" value="1573750942618"/>
+      <edit user="UPNA" value="1573750976489"/>
+      <edit user="UPNA" value="1573751553469"/>
+      <edit user="UPNA" value="1573751692642"/>
+      <edit user="UPNA" value="1573751790154"/>
+      <edit user="UPNA" value="1573751982817"/>
+      <edit user="UPNA" value="1573752178905"/>
+      <edit user="UPNA" value="1573752375990"/>
+      <edit user="UPNA" value="1573752894427"/>
+      <edit user="UPNA" value="1573753115841"/>
+      <edit user="UPNA" value="1573753163208"/>
+      <edit user="UPNA" value="1573753214824"/>
+      <edit user="UPNA" value="1573753249320"/>
+      <edit user="UPNA" value="1573753308101"/>
     </editLog>
   </properties>
   <processNumbering value="false"/>
@@ -74,7 +74,7 @@
           </nameLocation>
           <location height="17" width="89" x="398" y="102"/>
           <icon>BackgroundText</icon>
-          <staticLabel alignment="Left" backupValue="NODOS LIBRES" display="true" label="_230" value="55">
+          <staticLabel alignment="Left" backupValue="NODOS LIBRES" display="true" label="_230" value="51">
             <textLine value="NODOS LIBRES"/>
           </staticLabel>
           <dynamicProperties display="true" dynamicId="6" dynamicName="nodos_libres" idLabel="_137" label="_15" mode="Integer" modeLabel="_157" nameLabel="_160" precision="3" precisionLabel="_181" stringWidth="89" value="nodosLibres:Value" valueLabel="_255" width="10" widthLabel="_261">
@@ -832,9 +832,9 @@
             </expression>
             <expression inUse="true" name="End Simulation">
               <checkBox display="true" filename="" label="_655" type="file" value="false"/>
-              <lineText value="Model.calidadServCorto := Model.numProgramasCortosOK /  (Model.numProgramasCortosOK + Model.numProgramasCortosBAD);"/>
+              <lineText value="{Model.calidadServCorto := Model.numProgramasCortosOK /  (Model.numProgramasCortosOK + Model.numProgramasCortosBAD);"/>
               <lineText value="Model.calidadServLargo := Model.numProgramasLargosOK /  (Model.numProgramasLargosOK + Model.numProgramasLargosBAD);"/>
-              <lineText value="Model.calidadServTotal :=  (Model.numProgramasCortosOK + Model.numProgramasLargosOK) / Model.numProgramasTotal;"/>
+              <lineText value="Model.calidadServTotal :=  (Model.numProgramasCortosOK + Model.numProgramasLargosOK) / Model.numProgramasTotal;}"/>
             </expression>
           </expressionList>
           <icon display="true">Abandon Calls</icon>
@@ -904,7 +904,12 @@
           <expressionList commentLabel="_81" commentValue="" type="Delay">
             <expression inUse="false" name="Start Simulation"/>
             <expression inUse="false" name="Start Trial"/>
-            <expression inUse="false" name="Accept Entity"/>
+            <expression inUse="true" name="Accept Entity">
+              <checkBox display="true" filename="" label="_655" type="file" value="false"/>
+              <lineText value="OUTPUT(&quot;hOLAASIO&quot;);"/>
+              <lineText value=""/>
+              <lineText value="NextDelay := Function(&quot;tiempoEjecucionReal&quot;, Entity.tExecIdeal, 40.0);"/>
+            </expression>
             <expression inUse="false" name="Get Resource"/>
             <expression inUse="false" name="Free Resource"/>
             <expression inUse="true" name="Release Entity">
@@ -935,7 +940,7 @@
           </expressionList>
           <icon display="true">Clock</icon>
           <duration display="true" label="_14">
-            <durationValue distribution="100" label="_255"/>
+            <durationValue distribution="0" label="_255"/>
             <timeUnit label="_250" value="Hours"/>
           </duration>
           <collectactstats display="true" label="_72" value="false"/>
@@ -1123,8 +1128,25 @@
               <lineText value="&#9;SetAttributeValue(&quot;Corto&quot;,FALSE);"/>
               <lineText value="END IF;"/>
             </expression>
-            <expression inUse="false" name="Accept Entity">
+            <expression inUse="true" name="Accept Entity">
               <checkBox display="true" filename="" label="_655" type="file" value="false"/>
+              <lineText value="nProc :INTEGER;"/>
+              <lineText value="tempTExecIdeal : REAL;"/>
+              <lineText value=""/>
+              <lineText value="tempTExecIdeal := Function(&quot;Funcion_ejecucion_ideal&quot;);"/>
+              <lineText value="{SetAttributeValue(&quot;tExecIdeal&quot;, tempTExecIdeal);}"/>
+              <lineText value="Entity.tExecIdeal := tempTExecIdeal;"/>
+              <lineText value=""/>
+              <lineText value="nProc := DrawIntegerSample(&quot;BIN(14,0.5)&quot;);"/>
+              <lineText value="nProc:=nProc+2;"/>
+              <lineText value="Entity.nProcesos := nProc;"/>
+              <lineText value="{SetAttributeValue(&quot;nProcesos&quot;, nProc);}"/>
+              <lineText value=""/>
+              <lineText value="IF tempTExecIdeal &lt; 1.0"/>
+              <lineText value="&#9;SetAttributeValue(&quot;Corto&quot;,TRUE);"/>
+              <lineText value="ELSE"/>
+              <lineText value="&#9;SetAttributeValue(&quot;Corto&quot;,FALSE);"/>
+              <lineText value="END IF;"/>
             </expression>
             <expression inUse="false" name="Interrupt Processing"/>
             <expression inUse="false" name="Resume Processing"/>
@@ -1256,15 +1278,15 @@
       <checkBox display="true" label="_548" type="reset" value="false"/>
       <comment display="true" label="_81" value=""/>
       <statTypes display="true" label="_37">
-        <observation active="false" display="true" label="_167" value="true"/>
-        <timeweighted active="false" display="true" label="_245" value="false"/>
+        <observation active="true" display="true" label="_167" value="true"/>
+        <timeweighted active="true" display="true" label="_245" value="false"/>
       </statTypes>
       <reports display="true" label="_30">
-        <histogram active="false" display="true" label="_194" value="false"/>
-        <trace active="false" display="true" label="_195" value="false"/>
-        <checkBox active="false" display="true" label="_804" type="meter" value="false"/>
-        <checkBox active="false" display="true" label="_806" type="thermometer" value="false"/>
-        <report active="false" display="true" label="_225" value="false"/>
+        <histogram active="true" display="true" label="_194" value="false"/>
+        <trace active="true" display="true" label="_195" value="false"/>
+        <checkBox active="true" display="true" label="_804" type="meter" value="false"/>
+        <checkBox active="true" display="true" label="_806" type="thermometer" value="false"/>
+        <report active="true" display="true" label="_78" value="false"/>
       </reports>
     </attribute>
     <attribute display="true" id="79" label="_160" name="nodosLibres">
@@ -1467,6 +1489,46 @@
         <report active="true" display="true" label="_78" value="false"/>
       </reports>
     </attribute>
+    <attribute display="true" id="114" label="_160" name="nodoDerecha">
+      <mode display="true" label="_157" value="Integer"/>
+      <attributeValue display="true" label="_255" value="0"/>
+      <lastValue value="0"/>
+      <arraySize display="true" label="_0" minValue="0" value="0"/>
+      <modelParameter display="true" label="_158" value="false"/>
+      <checkBox display="true" label="_548" type="reset" value="false"/>
+      <comment display="true" label="_81" value=""/>
+      <statTypes display="true" label="_37">
+        <observation active="true" display="true" label="_167" value="true"/>
+        <timeweighted active="true" display="true" label="_245" value="false"/>
+      </statTypes>
+      <reports display="true" label="_30">
+        <histogram active="true" display="true" label="_194" value="false"/>
+        <trace active="true" display="true" label="_195" value="false"/>
+        <checkBox active="true" display="true" label="_804" type="meter" value="false"/>
+        <checkBox active="true" display="true" label="_806" type="thermometer" value="false"/>
+        <report active="true" display="true" label="_78" value="false"/>
+      </reports>
+    </attribute>
+    <attribute display="true" id="115" label="_160" name="nodoIzquierda">
+      <mode display="true" label="_157" value="Integer"/>
+      <attributeValue display="true" label="_255" value="0"/>
+      <lastValue value="0"/>
+      <arraySize display="true" label="_0" minValue="0" value="0"/>
+      <modelParameter display="true" label="_158" value="false"/>
+      <checkBox display="true" label="_548" type="reset" value="false"/>
+      <comment display="true" label="_81" value=""/>
+      <statTypes display="true" label="_37">
+        <observation active="true" display="true" label="_167" value="true"/>
+        <timeweighted active="true" display="true" label="_245" value="false"/>
+      </statTypes>
+      <reports display="true" label="_30">
+        <histogram active="true" display="true" label="_194" value="false"/>
+        <trace active="true" display="true" label="_195" value="false"/>
+        <checkBox active="true" display="true" label="_804" type="meter" value="false"/>
+        <checkBox active="true" display="true" label="_806" type="thermometer" value="false"/>
+        <report active="true" display="true" label="_78" value="false"/>
+      </reports>
+    </attribute>
   </globalModelAttributes>
   <namedDistributionList/>
   <tabularDistributionList/>
@@ -1498,9 +1560,15 @@
     <userFunction comment="" commentLabel="_81" id="53" name="tiempoEjecucionReal" nameLabel="_160" type="Expression">
       <expression>
         <checkBox display="true" filename="" label="_655" type="file" value="false"/>
+        <lineText value="Arg1, Arg2 : REAL;"/>
+        <lineText value="tExecIdeal, Lmax : REAL;"/>
+        <lineText value=""/>
+        <lineText value="tExecIdeal := Arg1;"/>
+        <lineText value="Lmax := Arg2;"/>
+        <lineText value=""/>
         <lineText value="x : REAL;"/>
         <lineText value=""/>
-        <lineText value="x := Entity.tExecIdeal * (1.0 + 0.2 * Model.nCanales * (1.0 + 0.15 * Lmax));"/>
+        <lineText value="x := tExecIdeal * (1.0 + 0.2 * {Model.nCanales}2.0 * (1.0 + 0.15 * Lmax) );"/>
         <lineText value=""/>
         <lineText value="RETURN x;"/>
       </expression>
@@ -1579,208 +1647,311 @@
       <expression>
         <checkBox display="true" filename="" label="_655" type="file" value="false"/>
         <lineText value="Arg1 : INTEGER;"/>
-        <lineText value="nActual : INTEGER;"/>
-        <lineText value="i: INTEGER;"/>
         <lineText value=""/>
-        <lineText value="nActual:= Arg1;"/>
-        <lineText value="IF (nActual = 63)"/>
-        <lineText value="&#9;&#9;nActual := 0;"/>
-        <lineText value="&#9;ELSE"/>
-        <lineText value="&#9;&#9;nActual := nActual + 1;"/>
-        <lineText value="&#9;END IF;"/>
+        <lineText value="nodoActualIndex, i : INTEGER;"/>
         <lineText value=""/>
-        <lineText value="WHILE (Model.arrayIDPrograma[nActual] &lt;&gt; -1)"/>
-        <lineText value="&#9;i:=0;"/>
-        <lineText value="&#9;WHILE ((i &lt; Model.nCanales) AND (GetArrayValue(Model.arrayCanales, i, nActual) &lt;&gt; -1))"/>
-        <lineText value="&#9;&#9;i:= i +1;"/>
+        <lineText value="nodoActualIndex:= Arg1;"/>
+        <lineText value="IF (nodoActualIndex = 63)"/>
+        <lineText value="&#9;nodoActualIndex := 0;"/>
+        <lineText value="ELSE"/>
+        <lineText value="&#9;nodoActualIndex := nodoActualIndex + 1;"/>
+        <lineText value="END IF;"/>
+        <lineText value=""/>
+        <lineText value="WHILE (Model.arrayIDPrograma[nodoActualIndex] &lt;&gt; -1)"/>
+        <lineText value="&#9;"/>
+        <lineText value="&#9;i := 0;"/>
+        <lineText value=""/>
+        <lineText value="&#9;{Buscamos el canal que este libre}"/>
+        <lineText value="&#9;WHILE ( (i &lt; Model.nCanales) AND (GetArrayValue(Model.arrayCanales, i, nodoActualIndex) &lt;&gt; -1))"/>
+        <lineText value="&#9;&#9;i := i + 1;"/>
         <lineText value="&#9;END WHILE;"/>
         <lineText value=""/>
-        <lineText value="&#9;IF GetArrayValue(Model.arrayCanales, i, nActual) &lt;&gt; -1"/>
-        <lineText value="&#9;&#9;OUTPUT(&quot;ME METO AQUÍ&quot;);"/>
+        <lineText value="&#9;{Comprobamos motivo salida del while}"/>
+        <lineText value="&#9;"/>
+        <lineText value="&#9;{No hay ningun canal libre}"/>
+        <lineText value="&#9;IF i = 2"/>
         <lineText value="&#9;&#9;RETURN -1;"/>
         <lineText value="&#9;END IF;"/>
         <lineText value=""/>
-        <lineText value=""/>
-        <lineText value="&#9;IF (nActual = 63)"/>
-        <lineText value="&#9;&#9;nActual := 0;"/>
+        <lineText value="&#9;IF (nodoActualIndex = 63)"/>
+        <lineText value="&#9;&#9;nodoActualIndex := 0;"/>
         <lineText value="&#9;ELSE"/>
-        <lineText value="&#9;&#9;nActual := nActual + 1;"/>
+        <lineText value="&#9;&#9;nodoActualIndex := nodoActualIndex + 1;"/>
         <lineText value="&#9;END IF;"/>
+        <lineText value=""/>
         <lineText value="END WHILE;"/>
-        <lineText value="RETURN nActual;"/>
+        <lineText value=""/>
+        <lineText value="{No hay ningun nodo libre a la derecha}"/>
+        <lineText value="{IF nodoActualIndexIndex = Arg1"/>
+        <lineText value="&#9;RETURN -2;"/>
+        <lineText value="END IF;}"/>
+        <lineText value=""/>
+        <lineText value="RETURN nodoActualIndex;"/>
+        <lineText value=""/>
+        <lineText value="{Busca el primer nodo libre de la derecha y "/>
+        <lineText value="comprueba que los enlaces del camino trazado esten disponibles}"/>
       </expression>
     </userFunction>
     <userFunction comment="" commentLabel="_81" id="110" name="BuscarNodoIzquierda" nameLabel="_160" type="Expression">
       <expression>
         <checkBox display="true" filename="" label="_655" type="file" value="false"/>
         <lineText value="Arg1 : INTEGER;"/>
-        <lineText value="nActual : INTEGER;"/>
-        <lineText value="i: INTEGER;"/>
         <lineText value=""/>
-        <lineText value="nActual:= Arg1;"/>
-        <lineText value="IF (nActual = 0)"/>
-        <lineText value="&#9;&#9;nActual := 63;"/>
-        <lineText value="&#9;ELSE"/>
-        <lineText value="&#9;&#9;nActual := nActual - 1;"/>
-        <lineText value="&#9;END IF;"/>
-        <lineText value="WHILE (Model.arrayIDPrograma[nActual] &lt;&gt; -1)"/>
-        <lineText value="&#9;i:=0;"/>
-        <lineText value="&#9;WHILE ((i &lt; Model.nCanales) AND GetArrayValue(Model.arrayCanales, i, nActual-1) &lt;&gt; -1)"/>
-        <lineText value="&#9;&#9;i:= i +1;"/>
+        <lineText value="nodoActualIndex, i : INTEGER;"/>
+        <lineText value=""/>
+        <lineText value="nodoActualIndex:= Arg1;"/>
+        <lineText value=""/>
+        <lineText value="IF (nodoActualIndex = 0)"/>
+        <lineText value="&#9;nodoActualIndex := 63;"/>
+        <lineText value="ELSE"/>
+        <lineText value="&#9;nodoActualIndex := nodoActualIndex - 1;"/>
+        <lineText value="END IF;"/>
+        <lineText value=""/>
+        <lineText value="WHILE (Model.arrayIDPrograma[nodoActualIndex] &lt;&gt; -1)"/>
+        <lineText value="&#9;"/>
+        <lineText value="&#9;i := 0;"/>
+        <lineText value=""/>
+        <lineText value="&#9;{Buscamos el canal que este libre}"/>
+        <lineText value="&#9;WHILE ( (i &lt; Model.nCanales) AND (GetArrayValue(Model.arrayCanales, i, nodoActualIndex - 1) &lt;&gt; -1))"/>
+        <lineText value="&#9;&#9;i := i + 1;"/>
         <lineText value="&#9;END WHILE;"/>
         <lineText value=""/>
-        <lineText value="&#9;IF GetArrayValue(Model.arrayCanales, i, nActual-1) &lt;&gt; -1"/>
+        <lineText value="&#9;{Comprobamos motivo salida del while}"/>
+        <lineText value="&#9;"/>
+        <lineText value="&#9;{No hay ningun canal libre}"/>
+        <lineText value="&#9;IF i = 2"/>
         <lineText value="&#9;&#9;RETURN -1;"/>
         <lineText value="&#9;END IF;"/>
         <lineText value=""/>
-        <lineText value=""/>
-        <lineText value="&#9;IF (nActual = 0)"/>
-        <lineText value="&#9;&#9;nActual := 63;"/>
+        <lineText value="&#9;IF (nodoActualIndex = 0)"/>
+        <lineText value="&#9;&#9;nodoActualIndex := 63;"/>
         <lineText value="&#9;ELSE"/>
-        <lineText value="&#9;&#9;nActual := nActual - 1;"/>
+        <lineText value="&#9;&#9;nodoActualIndex := nodoActualIndex - 1;"/>
         <lineText value="&#9;END IF;"/>
+        <lineText value=""/>
         <lineText value="END WHILE;"/>
-        <lineText value="RETURN nActual;"/>
+        <lineText value=""/>
+        <lineText value="{No hay ningun nodo libre a la derecha}"/>
+        <lineText value="{IF nodoActualIndexIndex = Arg1"/>
+        <lineText value="&#9;RETURN -2;"/>
+        <lineText value="END IF;}"/>
+        <lineText value=""/>
+        <lineText value="RETURN nodoActualIndex;"/>
+        <lineText value=""/>
+        <lineText value="{Busca el primer nodo libre de la derecha y "/>
+        <lineText value="comprueba que los enlaces del camino trazado esten disponibles}"/>
       </expression>
     </userFunction>
     <userFunction comment="" commentLabel="_81" id="111" name="DistanciaDerecha" nameLabel="_160" type="Expression">
       <expression>
         <checkBox display="true" filename="" label="_655" type="file" value="false"/>
         <lineText value="Arg1 : INTEGER;"/>
-        <lineText value="nDerecha : INTEGER;"/>
+        <lineText value="nodoDerechaIndex : INTEGER;"/>
         <lineText value=""/>
-        <lineText value="nDerecha := Function(&quot;BuscarNodoDerecha&quot;,Arg1);"/>
+        <lineText value="nodoDerechaIndex := Function(&quot;BuscarNodoDerecha&quot;, Arg1);"/>
         <lineText value=""/>
-        <lineText value="IF nDerecha = -1"/>
-        <lineText value="&#9;RETURN -1"/>
+        <lineText value="{No hemos encontrado ningun nodo libre a la derecha}"/>
+        <lineText value="IF (nodoDerechaIndex = Arg1)"/>
+        <lineText value="&#9;RETURN -2;"/>
+        <lineText value="END IF;"/>
+        <lineText value=""/>
+        <lineText value="{El camino no era viable}"/>
+        <lineText value="IF nodoDerechaIndex = -1"/>
+        <lineText value="&#9;RETURN -1;"/>
         <lineText value="ELSE "/>
-        <lineText value="&#9;IF Arg1 &lt; nDerecha"/>
-        <lineText value="&#9;&#9;RETURN nDerecha - Arg1;"/>
+        <lineText value="&#9;IF (Arg1 &lt; nodoDerechaIndex)"/>
+        <lineText value="&#9;&#9;RETURN (nodoDerechaIndex - Arg1);"/>
         <lineText value="&#9;ELSE "/>
-        <lineText value="&#9;&#9;RETURN 64 + nDerecha - Arg1;"/>
+        <lineText value="&#9;&#9;RETURN (64 + nodoDerechaIndex - Arg1);"/>
         <lineText value="&#9;END IF;"/>
         <lineText value="END IF;"/>
+        <lineText value=""/>
+        <lineText value=""/>
+        <lineText value="{Calcula la distancia entre Arg1 y el nodo proximo por la derecha}"/>
       </expression>
     </userFunction>
     <userFunction comment="" commentLabel="_81" id="112" name="DistanciaIzquierda" nameLabel="_160" type="Expression">
       <expression>
         <checkBox display="true" filename="" label="_655" type="file" value="false"/>
         <lineText value="Arg1 : INTEGER;"/>
-        <lineText value="nIzquierda : INTEGER;"/>
+        <lineText value="nodoIzquierdaIndex : INTEGER;"/>
         <lineText value=""/>
-        <lineText value="nIzquierda := Function(&quot;BuscarNodoIzquierda&quot;,Arg1);"/>
+        <lineText value="nodoIzquierdaIndex := Function(&quot;BuscarNodoDerecha&quot;, Arg1);"/>
         <lineText value=""/>
-        <lineText value="IF nIzquierda = -1"/>
-        <lineText value="&#9;RETURN -1"/>
+        <lineText value="{No hemos encontrado ningun nodo libre a la derecha}"/>
+        <lineText value="IF (nodoIzquierdaIndex = Arg1)"/>
+        <lineText value="&#9;RETURN -2;"/>
+        <lineText value="END IF;"/>
+        <lineText value=""/>
+        <lineText value="{El camino no era viable}"/>
+        <lineText value="IF nodoIzquierdaIndex = -1"/>
+        <lineText value="&#9;RETURN -1;"/>
         <lineText value="ELSE "/>
-        <lineText value="&#9;IF Arg1 &gt; nIzquierda"/>
-        <lineText value="&#9;&#9;RETURN Arg1 - nIzquierda;"/>
+        <lineText value="&#9;IF (Arg1 &gt; nodoIzquierdaIndex)"/>
+        <lineText value="&#9;&#9;RETURN (Arg1 - nodoIzquierdaIndex);"/>
         <lineText value="&#9;ELSE "/>
-        <lineText value="&#9;&#9;RETURN 64 - Arg1 + nIzquierda;"/>
+        <lineText value="&#9;&#9;RETURN (64 - Arg1 + nodoIzquierdaIndex);"/>
         <lineText value="&#9;END IF;"/>
         <lineText value="END IF;"/>
+        <lineText value=""/>
+        <lineText value=""/>
+        <lineText value="{Calcula la distancia entre Arg1 y el nodo proximo por la derecha}"/>
       </expression>
     </userFunction>
     <userFunction comment="" commentLabel="_81" id="113" name="AsignarNodos" nameLabel="_160" type="Expression">
       <expression>
         <checkBox display="true" filename="" label="_655" type="file" value="false"/>
-        <lineText value="Arg1: INTEGER;"/>
-        <lineText value="Arg2: INTEGER;"/>
+        <lineText value="Arg1 : INTEGER;"/>
+        <lineText value="Arg2 : INTEGER;"/>
         <lineText value=""/>
-        <lineText value="arrayAsignados : ANYOBJ;"/>
-        <lineText value="nNecesarios : INTEGER;"/>
+        <lineText value="{arrayAsignados : ANYOBJ;}"/>
+        <lineText value=""/>
+        <lineText value="nodosNecesarios : INTEGER;"/>
+        <lineText value="nodosAsignados : INTEGER; "/>
+        <lineText value="nodosPosibles : INTEGER;"/>
+        <lineText value=""/>
         <lineText value="distDerecha : INTEGER;"/>
         <lineText value="distIzquierda : INTEGER; "/>
-        <lineText value="nAsignados : INTEGER; "/>
-        <lineText value="nDerecha : INTEGER;"/>
-        <lineText value="nIzquierda : INTEGER;"/>
-        <lineText value="nPosibles : INTEGER;"/>
-        <lineText value="id: INTEGER;"/>
         <lineText value=""/>
-        <lineText value="nNecesarios := Arg1;"/>
-        <lineText value="id:= Arg2;"/>
-        <lineText value="nPosibles := Model.nodosLibres;"/>
-        <lineText value="arrayAsignados := CreateArray(&quot;INTEGER&quot;, 1,  nNecesarios);"/>
+        <lineText value="id : INTEGER;"/>
         <lineText value=""/>
+        <lineText value="nodosNecesarios := Arg1;"/>
+        <lineText value="id := Arg2;"/>
+        <lineText value="nodosPosibles := Model.nodosLibres;"/>
+        <lineText value="{arrayAsignados := CreateArray(&quot;INTEGER&quot;, 1,  nodosNecesarios);}"/>
         <lineText value=""/>
         <lineText value="{Realizamos la busqueda del primer nodo libre}"/>
         <lineText value="i : INTEGER;"/>
         <lineText value="i := 0;"/>
         <lineText value=""/>
-        <lineText value="WHILE Model.arrayIDPrograma[i]&lt;&gt; -1"/>
-        <lineText value="&#9;i := i +1;"/>
-        <lineText value="END WHILE ;"/>
+        <lineText value="{Buscamos el primer nodo libre}"/>
+        <lineText value="WHILE Model.arrayIDPrograma[i] &lt;&gt; -1"/>
+        <lineText value="&#9;i := i + 1;"/>
+        <lineText value="END WHILE;"/>
         <lineText value=""/>
-        <lineText value="Model.arrayIDPrograma[i]:=id;"/>
-        <lineText value="nDerecha := i;"/>
-        <lineText value="nIzquierda := i;"/>
-        <lineText value="nAsignados := 1;"/>
+        <lineText value="{Si estan todos ocupados}"/>
+        <lineText value="IF i = 64"/>
+        <lineText value="&#9;RETURN -1;"/>
+        <lineText value="END IF"/>
+        <lineText value=""/>
+        <lineText value="Model.arrayIDPrograma[i] := id;"/>
+        <lineText value="Model.nodoDerecha := i;"/>
+        <lineText value="Model.nodoIzquierda := i;"/>
+        <lineText value="nodosAsignados := 1;"/>
+        <lineText value=""/>
         <lineText value="OUTPUT(&quot;NUMERO DE NODOS QUE TIENE QUE OCUPAR&quot;)"/>
-        <lineText value="OUTPUT(nNecesarios);"/>
+        <lineText value="OUTPUT(nodosNecesarios);"/>
+        <lineText value=""/>
         <lineText value="{Empezamos el algoritmo}"/>
+        <lineText value=""/>
         <lineText value="OUTPUT(&quot;IMPRIMO LA I&quot;,i);"/>
-        <lineText value="distDerecha := Function(&quot;DistanciaDerecha&quot;, nDerecha);"/>
-        <lineText value="distIzquierda := Function(&quot;DistanciaIzquierda&quot;, nIzquierda);"/>
-        <lineText value="WHILE (nAsignados &lt; nNecesarios)"/>
-        <lineText value="&#9;OUTPUT(&quot;EPA&quot;);"/>
-        <lineText value="&#9;IF distDerecha = distIzquierda AND  distDerecha = -1 {No ha encontrado otro nodo libre}"/>
-        <lineText value="&#9;&#9;OUTPUT(&quot;NO HAY NODOS LIBRES&quot;)"/>
-        <lineText value="&#9;&#9;OUTPUT(nPosibles);"/>
-        <lineText value="&#9;&#9;nPosibles := nPosibles - nAsignados;"/>
-        <lineText value="&#9;&#9;IF nPosibles &lt; nNecesarios"/>
+        <lineText value=""/>
+        <lineText value="distDerecha := Function(&quot;DistanciaDerecha&quot;, Model.nodoDerecha);"/>
+        <lineText value="distIzquierda := Function(&quot;DistanciaIzquierda&quot;, Model.nodoIzquierda);"/>
+        <lineText value=""/>
+        <lineText value=""/>
+        <lineText value="{No existe ningun nodo libre}"/>
+        <lineText value="{IF (distDerecha = -2) OR (distIzquierda = -2)}"/>
+        <lineText value=""/>
+        <lineText value="WHILE (nodosAsignados &lt; nodosNecesarios)"/>
+        <lineText value="&#9;"/>
+        <lineText value="&#9;OUTPUT(&quot;gdb2&quot;);"/>
+        <lineText value=""/>
+        <lineText value="&#9;{No ha encontrado otro nodo libre}"/>
+        <lineText value="&#9;IF ( (distDerecha = distIzquierda) AND (distDerecha = -1) )"/>
+        <lineText value="&#9;&#9;{OUTPUT(&quot;NO HAY NODOS LIBRES&quot;);"/>
+        <lineText value="&#9;&#9;OUTPUT(nodosPosibles);"/>
+        <lineText value="&#9;&#9;nodosPosibles := nodosPosibles - nodosAsignados;"/>
+        <lineText value="&#9;&#9;"/>
+        <lineText value="&#9;&#9;IF nodosPosibles &lt; nodosNecesarios"/>
         <lineText value="&#9;&#9;&#9;RETURN -1;"/>
         <lineText value="&#9;&#9;ELSE"/>
         <lineText value="&#9;&#9;&#9;{Borramos todos los nodos que hemos guardado}"/>
-        <lineText value="&#9;&#9;&#9;FOR i:=0 TO 63"/>
-        <lineText value="&#9;&#9;&#9;&#9;IF(Model.arrayIDPrograma[i]=id)"/>
-        <lineText value="&#9;&#9;&#9;&#9;&#9;Model.arrayIDPrograma[i]:=-1;"/>
+        <lineText value="&#9;&#9;&#9;{FOR i := 0 TO 63"/>
+        <lineText value="&#9;&#9;&#9;&#9;IF (Model.arrayIDPrograma[i] = id)"/>
+        <lineText value="&#9;&#9;&#9;&#9;&#9;Model.arrayIDPrograma[i] := -1;"/>
         <lineText value="&#9;&#9;&#9;&#9;END IF;"/>
         <lineText value="&#9;&#9;&#9;END FOR;"/>
+        <lineText value=""/>
         <lineText value="&#9;&#9;&#9;{Buscamos el siguiente nodo libre hacia la derecha}"/>
-        <lineText value="&#9;&#9;&#9;i := nDerecha;"/>
+        <lineText value="&#9;&#9;&#9;{i := Model.nodoDerecha;"/>
         <lineText value="&#9;&#9;&#9;WHILE Model.arrayIDPrograma[i]&lt;&gt; -1"/>
         <lineText value="&#9;&#9;&#9;&#9;i := i +1;"/>
         <lineText value="&#9;&#9;&#9;END WHILE;"/>
-        <lineText value="&#9;&#9;&#9;nDerecha := i;"/>
-        <lineText value="&#9;&#9;&#9;nIzquierda := i;"/>
-        <lineText value="&#9;&#9;&#9;nAsignados := 1;"/>
-        <lineText value="&#9;&#9;&#9;distDerecha := Function(&quot;DistanciaDerecha&quot;, nDerecha);"/>
+        <lineText value="&#9;&#9;&#9;Model.nodoDerecha := i;"/>
+        <lineText value="&#9;&#9;&#9;Model.nodoIzquierda := i;"/>
+        <lineText value="&#9;&#9;&#9;nodosAsignados := 1;"/>
+        <lineText value="&#9;&#9;&#9;distDerecha := Function(&quot;DistanciaDerecha&quot;, Model.nodoDerecha);"/>
         <lineText value="&#9;&#9;&#9;distIzquierda := -1;"/>
-        <lineText value="&#9;&#9;END IF;"/>
+        <lineText value="&#9;&#9;END IF;}"/>
+        <lineText value="&#9;&#9;OUTPUT(&quot;rECOGER SERVILLETA&quot;)"/>
+        <lineText value="&#9;&#9;FOR i := 0 TO 63"/>
+        <lineText value="&#9;&#9;&#9;IF (Model.arrayIDPrograma[i] = id)"/>
+        <lineText value="&#9;&#9;&#9;&#9;Model.arrayIDPrograma[i] := -1;"/>
+        <lineText value="&#9;&#9;&#9;END IF;"/>
+        <lineText value="&#9;&#9;END FOR;"/>
+        <lineText value="&#9;&#9;"/>
+        <lineText value="&#9;&#9;RETURN -1;"/>
+        <lineText value=""/>
         <lineText value="&#9;ELSE"/>
         <lineText value="&#9;&#9;IF (distDerecha &lt;= distIzquierda)"/>
-        <lineText value="&#9;&#9;&#9;nDerecha := Function(&quot;BuscarNodoDerecha&quot;, nDerecha);"/>
-        <lineText value="&#9;&#9;&#9;Model.arrayIDPrograma[nDerecha]:=id;"/>
-        <lineText value="&#9;&#9;&#9;distDerecha := Function(&quot;DistanciaDerecha&quot;, nDerecha);"/>
+        <lineText value="&#9;&#9;&#9;Model.nodoDerecha := Function(&quot;BuscarNodoDerecha&quot;, Model.nodoDerecha);"/>
+        <lineText value="&#9;&#9;&#9;Model.arrayIDPrograma[Model.nodoDerecha]:=id;"/>
+        <lineText value="&#9;&#9;&#9;distDerecha := Function(&quot;DistanciaDerecha&quot;, Model.nodoDerecha);"/>
         <lineText value="&#9;&#9;&#9;OUTPUT(&quot;DERECHA&quot;);"/>
-        <lineText value="&#9;&#9;&#9;OUTPUT(nDerecha);"/>
+        <lineText value="&#9;&#9;&#9;OUTPUT(Model.nodoDerecha);"/>
+        <lineText value="&#9;&#9;&#9;OUTPUT(&quot;gdb1&quot;);"/>
         <lineText value="&#9;&#9;&#9;"/>
         <lineText value="&#9;&#9;ELSE&#9;"/>
-        <lineText value="&#9;&#9;&#9;nIzquierda := Function(&quot;BuscarNodoIzquierda&quot;, nIzquierda);"/>
-        <lineText value="&#9;&#9;&#9;Model.arrayIDPrograma[nIzquierda]:=id;"/>
-        <lineText value="&#9;&#9;&#9;distIzquierda := Function(&quot;DistanciaIzquierda&quot;, nIzquierda);"/>
+        <lineText value="&#9;&#9;&#9;Model.nodoIzquierda := Function(&quot;BuscarNodoIzquierda&quot;, Model.nodoIzquierda);"/>
+        <lineText value="&#9;&#9;&#9;Model.arrayIDPrograma[Model.nodoIzquierda] := id;"/>
+        <lineText value="&#9;&#9;&#9;distIzquierda := Function(&quot;DistanciaIzquierda&quot;, Model.nodoIzquierda);"/>
         <lineText value="&#9;&#9;&#9;OUTPUT(&quot;izquiwrda&quot;);"/>
-        <lineText value="&#9;&#9;&#9;OUTPUT(nIzquierda);"/>
+        <lineText value="&#9;&#9;&#9;OUTPUT(Model.nodoIzquierda);"/>
         <lineText value="&#9;&#9;END IF;"/>
-        <lineText value="&#9;&#9;nAsignados := nAsignados + 1;"/>
+        <lineText value=""/>
+        <lineText value="&#9;&#9;nodosAsignados := nodosAsignados + 1;"/>
         <lineText value="&#9;END IF;"/>
         <lineText value="END WHILE ;"/>
+        <lineText value=""/>
+        <lineText value=""/>
+        <lineText value="OUTPUT(&quot;GDB3&quot;);"/>
+        <lineText value=""/>
+        <lineText value=""/>
         <lineText value="{Ocupamos los canales}"/>
-        <lineText value="j:INTEGER;"/>
-        <lineText value="i:=nIzquierda;"/>
-        <lineText value="WHILE (i&lt;&gt;nDerecha)"/>
-        <lineText value="&#9;j:=0;"/>
-        <lineText value="&#9;WHILE ((j &lt; Model.nCanales) AND GetArrayValue(Model.arrayCanales, j, i) &lt;&gt; -1)"/>
-        <lineText value="&#9;&#9;j:= j +1;"/>
+        <lineText value="j : INTEGER;"/>
+        <lineText value="i := Model.nodoIzquierda;"/>
+        <lineText value=""/>
+        <lineText value="OUTPUT(&quot;Nodo Derecha: &quot;, Model.nodoDerecha);"/>
+        <lineText value="OUTPUT(&quot;Nodo Izquierda: &quot;, Model.nodoIzquierda);"/>
+        <lineText value="WHILE (i &lt;&gt; Model.nodoDerecha)"/>
+        <lineText value="&#9;j := 0;"/>
+        <lineText value="&#9;OUTPUT(&quot;Valor i&quot;, i);"/>
+        <lineText value="&#9;OUTPUT(&quot;Valor j&quot;, j);"/>
+        <lineText value=""/>
+        <lineText value="&#9;WHILE ( (j &lt; Model.nCanales) AND (GetArrayValue(Model.arrayCanales, j, i) &lt;&gt; -1) )     "/>
+        <lineText value="&#9;&#9;j:= j + 1;"/>
         <lineText value="&#9;END WHILE;"/>
-        <lineText value="&#9;SetArrayValue(Model.arrayCanales, j,i, id);"/>
-        <lineText value="&#9;i:=i+1;"/>
-        <lineText value="&#9;IF(i=64)"/>
-        <lineText value="&#9;&#9;i:=0;"/>
+        <lineText value="&#9;OUTPUT(&quot;Valor j2 :&quot;, j);"/>
+        <lineText value="&#9;OUTPUT(&quot;GDB4&quot;);"/>
+        <lineText value="&#9;SetArrayValue(Model.arrayCanales, j, i, id);"/>
+        <lineText value="&#9;OUTPUT(&quot;GDB5&quot;);"/>
+        <lineText value="&#9;i := i + 1;"/>
+        <lineText value="&#9;IF (i = 64)"/>
+        <lineText value="&#9;&#9;i := 0;"/>
         <lineText value="&#9;END IF;"/>
+        <lineText value=""/>
         <lineText value="END WHILE;"/>
+        <lineText value=""/>
+        <lineText value="h : INTEGER;"/>
+        <lineText value="OUTPUT(&quot;Estado ArrayNodos: &quot;);"/>
+        <lineText value="FOR H := 0 TO 64"/>
+        <lineText value="&#9;OUTPUT(GetArrayValue(Model.arrayCanales, 0, h));"/>
+        <lineText value="&#9;OUTPUT(GetArrayValue(Model.arrayCanales, 1, h));"/>
+        <lineText value="END FOR;"/>
         <lineText value="{OUTPUT(&quot;EMPIEZA AQUÍ&quot;);"/>
-        <lineText value="FOR i:=0 TO 63"/>
+        <lineText value=""/>
+        <lineText value="FOR i := 0 TO 63"/>
         <lineText value="&#9;OUTPUT(i);"/>
         <lineText value="&#9;OUTPUT(Model.arrayIDPrograma[i]);"/>
         <lineText value="END FOR;"/>
@@ -1832,7 +2003,6 @@
     <object idref="85"/>
     <object idref="86">
       <usage idref="6"/>
-      <usage idref="41"/>
     </object>
     <object idref="89"/>
     <object idref="95"/>
@@ -1851,6 +2021,8 @@
     <object idref="111"/>
     <object idref="112"/>
     <object idref="113"/>
+    <object idref="114"/>
+    <object idref="115"/>
   </xref>
   <familyNames>
     <family name="Undefined"/>
@@ -2065,7 +2237,7 @@
       <animationCheck label="_218" type="showEntities" value="true"/>
       <animationCheck label="_251" type="updateDynamicEntities" value="true"/>
     </animationChecks>
-    <animationSpeed display="true" label="_54" maxValue="100.0" minValue="1.0" numberType="double" precision="2" value="94"/>
+    <animationSpeed display="true" label="_54" maxValue="100.0" minValue="1.0" numberType="double" precision="2" value="49"/>
     <showAnimation value="true"/>
   </animationSettings>
   <scenarios value="false"/>

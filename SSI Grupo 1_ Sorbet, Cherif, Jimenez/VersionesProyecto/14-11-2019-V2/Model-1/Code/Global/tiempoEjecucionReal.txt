@@ -1,5 +1,11 @@
+Arg1, Arg2 : REAL;
+tExecIdeal, Lmax : REAL;
+
+tExecIdeal := Arg1;
+Lmax := Arg2;
+
 x : REAL;
 
-x := Entity.tExecIdeal * (1.0 + 0.2 * Model.nCanales * (1.0 + 0.15 * Lmax));
+x := tExecIdeal * (1.0 + 0.2 * {Model.nCanales}2.0 * (1.0 + 0.15 * Lmax) );
 
 RETURN x;
