@@ -1,14 +1,23 @@
 Arg1 : INTEGER;
-nIzquierda : INTEGER;
+nodoIzquierdaIndex : INTEGER;
 
-nIzquierda := Function("BuscarNodoIzquierda",Arg1);
+nodoIzquierdaIndex := Function("BuscarNodoDerecha", Arg1);
 
-IF nIzquierda = -1
-	RETURN -1
+{No hemos encontrado ningun nodo libre a la derecha}
+IF (nodoIzquierdaIndex = Arg1)
+	RETURN -2;
+END IF;
+
+{El camino no era viable}
+IF nodoIzquierdaIndex = -1
+	RETURN -1;
 ELSE 
-	IF Arg1 > nIzquierda
-		RETURN Arg1 - nIzquierda;
+	IF (Arg1 > nodoIzquierdaIndex)
+		RETURN (Arg1 - nodoIzquierdaIndex);
 	ELSE 
-		RETURN 64 - Arg1 + nIzquierda;
+		RETURN (64 - Arg1 + nodoIzquierdaIndex);
 	END IF;
 END IF;
+
+
+{Calcula la distancia entre Arg1 y el nodo proximo por la derecha}

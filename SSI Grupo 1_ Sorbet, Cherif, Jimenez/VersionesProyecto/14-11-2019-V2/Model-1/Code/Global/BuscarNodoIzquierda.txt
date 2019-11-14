@@ -1,28 +1,45 @@
 Arg1 : INTEGER;
-nActual : INTEGER;
-i: INTEGER;
 
-nActual:= Arg1;
-IF (nActual = 0)
-		nActual := 63;
-	ELSE
-		nActual := nActual - 1;
-	END IF;
-WHILE (Model.arrayIDPrograma[nActual] <> -1)
-	i:=0;
-	WHILE ((i < Model.nCanales) AND GetArrayValue(Model.arrayCanales, i, nActual-1) <> -1)
-		i:= i +1;
+nodoActualIndex, i : INTEGER;
+
+nodoActualIndex:= Arg1;
+
+IF (nodoActualIndex = 0)
+	nodoActualIndex := 63;
+ELSE
+	nodoActualIndex := nodoActualIndex - 1;
+END IF;
+
+WHILE (Model.arrayIDPrograma[nodoActualIndex] <> -1)
+	
+	i := 0;
+
+	{Buscamos el canal que este libre}
+	WHILE ( (i < Model.nCanales) AND (GetArrayValue(Model.arrayCanales, i, nodoActualIndex - 1) <> -1))
+		i := i + 1;
 	END WHILE;
 
-	IF GetArrayValue(Model.arrayCanales, i, nActual-1) <> -1
+	{Comprobamos motivo salida del while}
+	
+	{No hay ningun canal libre}
+	IF i = 2
 		RETURN -1;
 	END IF;
 
-
-	IF (nActual = 0)
-		nActual := 63;
+	IF (nodoActualIndex = 0)
+		nodoActualIndex := 63;
 	ELSE
-		nActual := nActual - 1;
+		nodoActualIndex := nodoActualIndex - 1;
 	END IF;
+
 END WHILE;
-RETURN nActual;
+
+{No hay ningun nodo libre a la derecha}
+{IF nodoActualIndexIndex = Arg1
+	RETURN -2;
+END IF;}
+
+RETURN nodoActualIndex;
+
+{Busca el primer nodo libre de la derecha y 
+comprueba que los enlaces del camino trazado esten disponibles}
