@@ -1,0 +1,150 @@
+Arg1 : INTEGER;
+Arg2 : INTEGER;
+
+{arrayAsignados : ANYOBJ;}
+
+nodosNecesarios : INTEGER;
+nodosAsignados : INTEGER; 
+nodosPosibles : INTEGER;
+nodoPrincipalIndex: INTEGER;
+distDerecha : INTEGER;
+distIzquierda : INTEGER; 
+
+id : INTEGER;
+
+nodosNecesarios := Arg1;
+id := Arg2;
+nodosPosibles := Model.nodosLibres;
+{arrayAsignados := CreateArray("INTEGER", 1,  nodosNecesarios);}
+
+{Realizamos la busqueda del primer nodo libre}
+i : INTEGER;
+
+{Buscamos el primer nodo libre}
+
+i := 0;
+WHILE Model.arrayIDPrograma[i] <> -1
+	i := i + 1;
+END WHILE;
+nodoPrincipalIndex:=i;
+OUTPUT("NODO DESDE EL QUE PARTO",i);
+{Si estan todos ocupados}
+IF i = 64
+	RETURN -1;
+END IF
+
+Model.arrayIDPrograma[i] := id;
+Model.nodoDerecha := i;
+Model.nodoIzquierda := i;
+nodosAsignados := 1;
+
+OUTPUT("NUMERO DE NODOS QUE TIENE QUE OCUPAR")
+OUTPUT(nodosNecesarios);
+
+{Empezamos el algoritmo}
+
+distDerecha := Function("DistanciaDerecha", Model.nodoDerecha);
+distIzquierda := Function("DistanciaIzquierda", Model.nodoIzquierda);
+
+
+{No existe ningun nodo libre}
+{IF (distDerecha = -2) OR (distIzquierda = -2)}
+
+WHILE (nodosAsignados < nodosNecesarios)
+	{OUTPUT("NODO DERECHA ",Model.nodoDerecha);
+	OUTPUT("DISTANCIA DERECHA ",distDerecha);
+	OUTPUT("NODO IZQUIERDA ",Model.nodoIzquierda);
+	OUTPUT("DISTANCIA IZQUIERDA ",distIzquierda);}
+
+	{No ha encontrado otro nodo libre}
+	IF ( (distDerecha = distIzquierda) AND (distDerecha = -1) )
+		OUTPUT("NO HAY NODOS LIBRES, LOS NODOS POSIBLES SON: ");
+		OUTPUT(nodosPosibles);
+		nodosPosibles := nodosPosibles - nodosAsignados;
+		
+		IF nodosPosibles < nodosNecesarios
+			OUTPUT("NO SE PUEDE COLOCAR EL PROGRAMA!!!");
+			FOR i := 0 TO 63
+				IF (Model.arrayIDPrograma[i] = id)
+					Model.arrayIDPrograma[i] := -1;
+				END IF;
+			END FOR;
+			RETURN -1;
+		ELSE
+			{Busco un nuevo nodoinicial}
+			i:=nodoPrincipalIndex+1;
+			WHILE Model.arrayIDPrograma[i]<> -1
+				i := i +1;
+			END WHILE;
+			nodoPrincipalIndex:=i;
+			OUTPUT("NUEVO NODO PRINCIPAL",nodoPrincipalIndex);
+			{Borramos todos los nodos que hemos guardado menos el nuevo nodo inicial}
+			FOR i := 0 TO 63
+				IF (Model.arrayIDPrograma[i] = id) AND (i <> nodoPrincipalIndex)
+					Model.arrayIDPrograma[i] := -1;
+				END IF;
+			END FOR;	
+		
+			Model.nodoDerecha := nodoPrincipalIndex;
+			Model.nodoIzquierda := nodoPrincipalIndex;
+			nodosAsignados := 1;
+			distDerecha := Function("DistanciaDerecha", Model.nodoDerecha);
+			distIzquierda := -1;
+		END IF;
+		
+
+	ELSE
+		IF ((distDerecha <= distIzquierda) OR (distIzquierda=-1) AND (distDerecha <> -1))
+			Model.nodoDerecha := Function("BuscarNodoDerecha", Model.nodoDerecha);
+			Model.arrayIDPrograma[Model.nodoDerecha]:=id;
+			distDerecha := Function("DistanciaDerecha", Model.nodoDerecha);
+			{OUTPUT("DERECHA");
+			OUTPUT(Model.nodoDerecha);
+			OUTPUT("gdb1");}
+			
+		ELSE	
+			Model.nodoIzquierda := Function("BuscarNodoIzquierda", Model.nodoIzquierda);
+			Model.arrayIDPrograma[Model.nodoIzquierda] := id;
+			distIzquierda := Function("DistanciaIzquierda", Model.nodoIzquierda);
+			{OUTPUT("izquiwrda");
+			OUTPUT(Model.nodoIzquierda);}
+		END IF
+		nodosAsignados := nodosAsignados + 1;
+	END IF;
+END WHILE ;
+{SI LLEGAMOS AQUÍ SE PUEDEN ASIGNAR LOS CANALES}
+
+j : INTEGER;
+i := Model.nodoIzquierda;
+
+{OUTPUT("Nodo Derecha: ", Model.nodoDerecha);
+OUTPUT("Nodo Izquierda: ", Model.nodoIzquierda);}
+WHILE (i <> Model.nodoDerecha)
+	j := 0;
+
+	WHILE ( (j < Model.nCanales) AND (GetArrayValue(Model.arrayCanales, j, i) <> -1) )     
+		j:= j + 1;
+	END WHILE;
+	SetArrayValue(Model.arrayCanales, j, i, id);
+	OUTPUT("GDB5");
+	i := i + 1;
+	IF (i = 64)
+		i := 0;
+	END IF;
+
+END WHILE;
+h : INTEGER;
+OUTPUT("IMPRIMO ARRAY CANALES despues ");
+FOR h := 0 TO 63
+	OUTPUT(GetArrayValue(Model.arrayCanales, 0, h));
+END FOR;
+OUTPUT("IMPRIMO NODOS Y SU ID despues");
+
+FOR i := 0 TO 63
+	OUTPUT(Model.arrayIDPrograma[i]);
+END FOR;
+IF (Model.nodoIzquierda < Model.nodoDerecha)
+	RETURN (Model.nodoDerecha - Model.nodoIzquierda);
+ELSE 
+	RETURN (64 + Model.nodoDerecha - Model.nodoIzquierda);
+END IF;

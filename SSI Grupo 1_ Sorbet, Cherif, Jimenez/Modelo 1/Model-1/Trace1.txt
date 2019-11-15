@@ -1,0 +1,2 @@
+Replication 1
+Action	Activity	Entity	SequenceNum	SimTime

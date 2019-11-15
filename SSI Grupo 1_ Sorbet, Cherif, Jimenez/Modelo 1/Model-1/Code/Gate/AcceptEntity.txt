@@ -1,0 +1,20 @@
+{
+Entity.ActivityTime = Total time entity was in an activity
+Entity.AcceptTime = Time Entity enters an Activity or Process
+Entity.EnterTime = Time the Entity instance entered the current activity
+ReleaseTime = Time Entity is released from an Activity or Process
+}
+respuesta:INTEGER;
+
+{Igual no comprueba cuando se va el primero el que pasa a ser el primero}
+IF Entity.Name="ProgramaV2"
+	IF NumberOnHold=0
+		respuesta:=Function("AsignarNodos",Entity.nProcesos,Entity.SequenceNum);
+		OUTPUT(respuesta);
+		IF(respuesta<>-1)
+			Entity.Lmax := FLOAT(respuesta);
+			OUTPUT("LMAX ES",Entity.Lmax);
+			GenerateEntity("Aceptador");
+		END IF;
+	END IF;
+END IF;

@@ -1,0 +1,9 @@
+miGate : ANYOBJ;
+res : BOOLEAN;
+
+IF ActivatedByTrigger = FALSE
+	IF Model.SalesRep > 0
+		GenerateEntity("AbreSales");
+	END IF
+	Entity.PreviousTime := SimTime;
+END IF

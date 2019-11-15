@@ -1,6 +1,0 @@
-{
-Entity.ActivityTime = Total time entity was in an activity
-Entity.AcceptTime = Time Entity enters an Activity or Process
-Entity.EnterTime = Time the Entity instance entered the current activity
-ReleaseTime = Time Entity is released from an Activity or Process
-}

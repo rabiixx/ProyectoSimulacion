@@ -1,0 +1,9 @@
+IF Entity.Name = "ProgramaV2"
+	Model.nodosLibres := Model.nodosLibres - Entity.nProcesos;
+	Entity.tEnCola := Entity.ActivityTime;
+END IF;
+{
+SetAttributeValue("tEnCola", Entity.ActivityTime);
+Entity.Type.tEnCola := Entity.Type.RealeaseTime - Entity.Type.EnterTime;
+
+Entity.Type.tEnCola := Entity.Type.ActivityTime;}

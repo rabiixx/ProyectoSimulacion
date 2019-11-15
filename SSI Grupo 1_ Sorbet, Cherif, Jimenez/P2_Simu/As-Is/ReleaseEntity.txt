@@ -1,5 +1,0 @@
-Model.SalesRep := Model.SalesRep + 1;
-GenerateEntity("AbreSales");
-
-Model.TimeSales := Model.TimeSales + (SimTime-Entity.PreviousTime);
-Model.CountSales := Model.CountSales + 1;

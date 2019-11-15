@@ -1,3 +1,0 @@
-Model.calidadServicioCorto := numProgramasCortosOK / (numProgramasCortosOK + numProgramasCortosBAD);
-Model.calidadServicioLargo := numProgramasLargasOK / (numProgramasLargosOK + numProgramasLargosBAD);
-Model.calidadServicioTotal := (numProgramasCortosOK + numProgramasLargosOK) / numProgramasTotal;

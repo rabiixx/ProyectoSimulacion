@@ -1,5 +1,0 @@
-x : REAL;
-
-x := Entity.tExecIdeal * (1.0 + 0.2 * Model.nCanales * (1.0 + 0.15 * Lmax));
-
-RETURN x;

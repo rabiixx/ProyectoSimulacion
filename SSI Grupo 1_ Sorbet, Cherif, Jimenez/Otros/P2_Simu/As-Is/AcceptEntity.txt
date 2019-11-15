@@ -1,0 +1,2 @@
+Model.SalesRep := Model.SalesRep - 1;
+Entity.PreviousTime := SimTime;

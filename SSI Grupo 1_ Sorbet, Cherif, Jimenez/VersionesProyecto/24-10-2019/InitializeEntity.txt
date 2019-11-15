@@ -1,4 +1,0 @@
-nProc :INTEGER;
-nProc := DrawIntegerSample("BIN(14,0.5)");
-nProc:=nProc+2;
-SetAttributeValue("nProcesos", nProc);

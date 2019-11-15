@@ -1,0 +1,3 @@
+x : REAL;
+x := 3.0 * DrawRealSample("Exp(20.0)");
+RETURN x;

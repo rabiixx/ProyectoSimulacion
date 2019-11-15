@@ -1,3 +1,0 @@
-x : REAL;
-x := 3 * DrawRealSample("Exp(5.0)");
-RETURN X;

@@ -1,5 +1,0 @@
-x, y : REAL;
-x := GetAttributeValue("tEnCola");
-y := GetAttributeValue("tExecReal");
-Entity.Type.tServicio := x + y;
-{Entity.Type.tServicio := Entity.Type.tEnCola + Entity.Type.tExecReal;}
